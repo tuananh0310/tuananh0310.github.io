@@ -1,35 +1,27 @@
-# eldin.space
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9042b890-6768-4734-8fa2-cb0b81be7a72/deploy-status)](https://app.netlify.com/sites/eldin-space/deploys)
+# Le Xuan Tuan Anh Portfolio
 
 ## Project setup
 
 ```
-npm install
+pnpm install
 ```
 
 ### Compiles and hot-reloads for development
 
 ```
-npm run serve
+NODE_OPTIONS=--openssl-legacy-provider pnpm serve
 ```
 
 ### Compiles and minifies for production
 
 ```
-npm run build
-```
-
-### Run your tests
-
-```
-npm run test
+NODE_OPTIONS=--openssl-legacy-provider pnpm build
 ```
 
 ### Lints and fixes files
 
 ```
-npm run lint
+pnpm lint
 ```
 
 ### Customize configuration

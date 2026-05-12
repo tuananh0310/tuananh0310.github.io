@@ -7,28 +7,16 @@
           <v-timeline-item color="green" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold green--text">SEP 2017 -</div>
-                <div class="caption font-weight-bold green--text">MAY 2022</div>
+                <div class="caption font-weight-bold green--text">OCT 2017 -</div>
+                <div class="caption font-weight-bold green--text">MAR 2022</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Computer Electronics Engineer</strong>
+                <strong>Engineering in Computer Electronics</strong>
                 <div class="caption mb-2">Posts and Telecommunications Institute of Technology (PTIT)</div>
+                <div class="caption mb-2">Classification: Good</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
-
-<!--          <v-timeline-item color="green" small>-->
-<!--            <v-layout pt-3>-->
-<!--              <v-flex xs4>-->
-<!--                <div class="caption font-weight-bold green&#45;&#45;text">SEP 2003 -</div>-->
-<!--                <div class="caption font-weight-bold green&#45;&#45;text">MAY 2007</div>-->
-<!--              </v-flex>-->
-<!--              <v-flex class="pl-2">-->
-<!--                <strong>Electrical Technician for Computers</strong>-->
-<!--                <div class="caption mb-2">Electro-technical school Doboj</div>-->
-<!--              </v-flex>-->
-<!--            </v-layout>-->
-<!--          </v-timeline-item>-->
         </v-timeline>
       </v-card-text>
     </v-flex>
@@ -39,12 +27,53 @@
           <v-timeline-item color="green" small>
             <v-layout pt-3>
               <v-flex xs4>
+                <div class="caption font-weight-bold green--text">JAN 2026 -</div>
+                <div class="caption font-weight-bold green--text">PRESENT</div>
+              </v-flex>
+              <v-flex class="pl-2">
+                <strong>FPT Corporation (FCI)</strong>
+                <div class="caption mb-2">Senior Full-Stack Developer | DevOps Engineer</div>
+                <ul class="caption mb-2 pl-3">
+                  <li>Architected Partner Portal V2 with Laravel 12, PHP 8.2, Vue 3, TypeScript, and Vuetify 3.</li>
+                  <li>Built approval workflows, real-time notifications, RBAC, and integrations with FPT ID SSO, S3, E-Contract, and CRM.</li>
+                  <li>Led Docker, Kubernetes, and GitOps delivery with Jenkins to ArgoCD migration.</li>
+                </ul>
+              </v-flex>
+            </v-layout>
+          </v-timeline-item>
+
+          <v-timeline-item color="green" small>
+            <v-layout pt-3>
+              <v-flex xs4>
+                <div class="caption font-weight-bold green--text">DEC 2024 -</div>
+                <div class="caption font-weight-bold green--text">DEC 2025</div>
+              </v-flex>
+              <v-flex class="pl-2">
+                <strong>FPT Smart Cloud</strong>
+                <div class="caption mb-2">Fullstack Engineer</div>
+                <ul class="caption mb-2 pl-3">
+                  <li>Implemented CRM and Asset Management systems under Agile Scrum.</li>
+                  <li>Mentored interns and freshers, reviewed code, and shared AWS/SOLID knowledge.</li>
+                  <li>Completed the Opportunities to Invoices flow and joined AIverse Hackathon 2025.</li>
+                </ul>
+              </v-flex>
+            </v-layout>
+          </v-timeline-item>
+
+          <v-timeline-item color="green" small>
+            <v-layout pt-3>
+              <v-flex xs4>
                 <div class="caption font-weight-bold green--text">AUG 2022 -</div>
-                <div class="caption font-weight-bold green--text">AUG 2024 </div>
+                <div class="caption font-weight-bold green--text">DEC 2024</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>The First One Jsc</strong>
-                <div class="caption mb-2">Software Development Engineer</div>
+                <strong>The First One JSC</strong>
+                <div class="caption mb-2">Software Engineer</div>
+                <ul class="caption mb-2 pl-3">
+                  <li>Built Laravel, Vue.js, and MySQL systems across multiple business domains.</li>
+                  <li>Collaborated with leaders and PMs to design and implement practical solutions.</li>
+                  <li>Received MVP Employee Q3 2023 and 1st place at CnctorJapan Hackathon 2024.</li>
+                </ul>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -52,25 +81,56 @@
           <v-timeline-item color="green" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold green--text">FEB 2022 -</div>
-                <div class="caption font-weight-bold green--text">JULY 2022</div>
+                <div class="caption font-weight-bold green--text">MAY 2022 -</div>
+                <div class="caption font-weight-bold green--text">JUL 2022</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Misa</strong>
-                <div class="caption mb-2">Intern Software Development Engineer</div>
+                <strong>MISA</strong>
+                <div class="caption mb-2">Intern</div>
+                <div class="caption mb-2">Explored code, designed UI, and fixed bugs with .NET and JavaScript.</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
-
+        </v-timeline>
+      </v-card-text>
+    </v-flex>
+    <v-flex xs12 sm12 md5 lg6 xl6 class="mt-4 pt-4">
+      <h2 class="mb-4 pl-4 pt-2">Certifications</h2>
+      <v-card-text class="py-0">
+        <v-timeline align-top dense>
           <v-timeline-item color="green" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold green--text">AUG 2018 -</div>
-                <div class="caption font-weight-bold green--text">APR 1019</div>
+                <div class="caption font-weight-bold green--text">SEP 2025 -</div>
+                <div class="caption font-weight-bold green--text">SEP 2028</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>IT Technician</strong>
-                <div class="caption mb-2">Vietel</div>
+                <strong>AWS Certified Developer - Associate</strong>
+                <div class="caption mb-2">
+                  <a
+                    href="https://www.credly.com/badges/f058f6b0-1c47-43fa-86ed-a025cdaeaf7a"
+                    target="_blank"
+                    rel="noopener"
+                  >Verify on Credly</a>
+                </div>
+              </v-flex>
+            </v-layout>
+          </v-timeline-item>
+          <v-timeline-item color="green" small>
+            <v-layout pt-3>
+              <v-flex xs4>
+                <div class="caption font-weight-bold green--text">AUG 2024 -</div>
+                <div class="caption font-weight-bold green--text">AUG 2027</div>
+              </v-flex>
+              <v-flex class="pl-2">
+                <strong>AWS Certified Solutions Architect - Associate</strong>
+                <div class="caption mb-2">
+                  <a
+                    href="https://www.credly.com/badges/ed81cbeb-fe6d-4312-b7c3-907387071fa4"
+                    target="_blank"
+                    rel="noopener"
+                  >Verify on Credly</a>
+                </div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -78,20 +138,22 @@
       </v-card-text>
     </v-flex>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
-      <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
+      <v-flex xs12 sm12 md8 lg8 xl8 class="mx-2 pt-4">
         <h2>
           <span>Coding</span>
           <span class="green--text">Skills</span>
         </h2>
         <br>
-        <strong>VUE/NUXT, </strong>
-        <strong>HTML/CSS/JavaScript, </strong>
-        <strong>PHP/LARAVEL, </strong>
-        <strong>AWS</strong>
+        <p><strong>Frontend:</strong> Vue.js, Vue 3, JavaScript (ES6+), TypeScript, HTML5, CSS3, Pinia, Vuetify 3, Bootstrap, CoreUI</p>
+        <p><strong>Backend:</strong> Laravel 12, PHP 8.2, PHP 7.x/8.x, C# (.NET basic), RESTful API, JWT, Spatie Permission</p>
+        <p><strong>Database:</strong> MySQL 8.0, PostgreSQL, Redis, relational design, JSON columns, polymorphic relationships</p>
+        <p><strong>Cloud &amp; DevOps:</strong> AWS, Docker, Kubernetes, ArgoCD, Jenkins, GitHub/GitLab CI/CD, Nginx, CloudWatch, API Gateway, Lambda, S3, RDS, SNS, SQS</p>
+        <p><strong>Software Engineering:</strong> OOP, System Design, Clean Code, SOLID, Design Patterns, Microservices, Message Queue, RBAC, WebSocket</p>
+        <p><strong>Tools:</strong> Jira, Confluence, Slack, Backlog, Sentry, GitHub Copilot, ChatGPT, Cursor</p>
       </v-flex>
       <div class="mt-4 pt-2">
         <v-btn
-          href=""
+          href="/le-xuan-tuan-anh-cv.pdf"
           target="_blank"
           color="green"
           dark
@@ -109,15 +171,15 @@
 export default {
   metaInfo: {
     title: 'Resume',
-    titleTemplate: "%s ← Tuan anhLee",
+    titleTemplate: '%s ← Le Xuan Tuan Anh',
     meta: [
       {
         name: 'description',
-        content: 'Resume of Tuan anh Lee'
+        content: 'Resume of Le Xuan Tuan Anh'
       },
       {
         name: 'keywords',
-        content: 'Resume, Tuan anh Lee, Frontend Developer, Vue, Nuxt, JavaScript, HTML, CSS, Photoshop, Adobe XD, Zeplin'
+        content: 'Resume, Le Xuan Tuan Anh, Fullstack Engineer, Vue.js, Laravel, PHP, AWS, JavaScript, TypeScript, MySQL'
       }
     ]
   },

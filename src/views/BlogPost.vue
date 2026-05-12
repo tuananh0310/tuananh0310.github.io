@@ -32,9 +32,9 @@ export default {
   metaInfo () {
     return {
       title: this.result.title,
-      titleTemplate: "%s ← Eldin's Blog",
+      titleTemplate: '%s ← Le Xuan Tuan Anh',
       meta: [
-      
+
       ]
     }
   },

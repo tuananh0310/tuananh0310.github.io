@@ -26,9 +26,9 @@ let storyapi = new StoryblokClient({
 export default {
   metaInfo: {
     title: 'Blog',
-    titleTemplate: "%s ← Tuan anhLee",
+    titleTemplate: '%s ← Le Xuan Tuan Anh',
     meta: [
-     
+
     ]
   },
   data () {

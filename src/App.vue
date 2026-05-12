@@ -24,20 +24,20 @@ import TheFooter from './components/TheFooter'
 export default {
   name: 'App',
   metaInfo: {
-    titleTemplate: "%s ← Tuan anhLee",
+    titleTemplate: '%s ← Le Xuan Tuan Anh',
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: "Tunanh's Portfolio" },
+      { name: 'description', content: "Le Xuan Tuan Anh's portfolio" },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Tuan anhLee" },
-      { property: 'og:site_name', content: "Tuan anhLee" },
+      { property: 'og:title', content: 'Le Xuan Tuan Anh' },
+      { property: 'og:site_name', content: 'Le Xuan Tuan Anh' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
+      { property: 'og:url', content: 'https://tuananh0310.github.io/portfolio/' },
       {
         property: 'og:image',
         content: ''
       },
-      { property: 'og:description', content: "Tunanh's Portfolio" }
+      { property: 'og:description', content: "Le Xuan Tuan Anh's portfolio" }
     ]
   },
   components: {

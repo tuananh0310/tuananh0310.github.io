@@ -37,9 +37,9 @@
 export default {
   metaInfo: {
     title: 'Graphic Portfolio ',
-    titleTemplate: "%s ← Tuan anhLee",
+    titleTemplate: '%s ← Le Xuan Tuan Anh',
     meta: [
-     
+
     ]
   },
   data () {
@@ -48,39 +48,39 @@ export default {
       images: [
         {
           dialog: false,
-          title: 'VilaShirts Logo',
+          title: 'VilaShirts Logo'
         },
         {
           dialog: false,
-          title: 'BlackBird Property Group Logo',
+          title: 'BlackBird Property Group Logo'
         },
         {
           dialog: false,
-          title: 'TeeLock Consulting Logo',
+          title: 'TeeLock Consulting Logo'
         },
         {
           dialog: false,
-          title: 'SEA||WA||MMXI',
+          title: 'SEA||WA||MMXI'
         },
         {
           dialog: false,
-          title: 'Alpine365 Logo',
+          title: 'Alpine365 Logo'
         },
         {
           dialog: false,
-          title: 'Josefine Product Pack',
+          title: 'Josefine Product Pack'
         },
         {
           dialog: false,
-          title: 'Next Party Flayer',
+          title: 'Next Party Flayer'
         },
         {
           dialog: false,
-          title: 'VilaShirts T-Shirts',
+          title: 'VilaShirts T-Shirts'
         },
         {
           dialog: false,
-          title: 'BAB Coin',
+          title: 'BAB Coin'
         }
       ]
     }

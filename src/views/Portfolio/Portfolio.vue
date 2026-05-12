@@ -3,7 +3,7 @@
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-flex v-for="portfolio in portfolios" :key="portfolio.src" xs12 sm12 md4 lg4 xl4>
         <v-card
-          :to="'/portfolio/'+(portfolio.title).toLowerCase()"
+          :to="portfolio.to"
           hover
           flat
           color="transparent"
@@ -24,9 +24,9 @@
 export default {
   metaInfo: {
     title: 'Portfolio',
-    titleTemplate: "%s ← Tuan anhLee",
+    titleTemplate: '%s ← Le Xuan Tuan Anh',
     meta: [
-    
+
     ]
   },
   data () {
@@ -34,16 +34,8 @@ export default {
       portfolios: [
         {
           src: 'https://i.imgur.com/GvTt5GG.png',
-          title: 'Web'
-        },
-
-        {
-          src: 'https://i.imgur.com/wXLtLKy.png',
-          title: 'Video'
-        },
-        {
-          src: 'https://i.imgur.com/g74mGuU.png',
-          title: 'Graphic'
+          title: 'Software Projects',
+          to: '/portfolio/web'
         }
       ]
     }

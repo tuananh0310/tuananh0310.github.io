@@ -7,17 +7,12 @@
           <span class="green--text">Services</span>
         </h2>
       </v-flex>
-      <v-flex v-for="service in services" :key="service.src" xs6 sm3 md3 lg3 xl3>
+      <v-flex v-for="service in services" :key="service.title" xs6 sm3 md3 lg3 xl3>
         <v-card hover flat color="transparent" :style="{'cursor':'context-menu'}">
           <v-card-title></v-card-title>
-          <v-img
-            :src="service.src"
-            height="100"
-            aspect-ratio="2.75"
-            :alt="'Eldin do '+service.title"
-            lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
-            contain
-          ></v-img>
+          <v-card-text class="text-xs-center">
+            <v-icon x-large color="green">{{service.icon}}</v-icon>
+          </v-card-text>
           <v-card-title class="justify-center">
             <v-flex text-xs-center subheading font-weight-bold>{{service.title}}</v-flex>
           </v-card-title>
@@ -25,33 +20,17 @@
       </v-flex>
       <v-flex xs12 sm12 md12 lg12 xl12>
         <h2 class="pl-4">
-          <span>My</span>
-          <span class="green--text">Clients</span>
+          <span>Work</span>
+          <span class="green--text">Domains</span>
         </h2>
       </v-flex>
 
-      <v-flex v-for="client in clients" :key="client.src" xs6 sm4 md3 lg2 xl2>
-        <v-card flat :href="client.href" target="_blank" color="transparent">
-          <v-hover>
-            <v-img
-              slot-scope="{ hover }"
-              :src="client.src"
-              :alt="client.name+' logo'"
-              lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
-              height="100"
-              width="160"
-              aspect-ratio="2.75"
-              contain
-            >
-              <v-expand-transition>
-                <div
-                  v-if="!hover"
-                  class="transition-fast-in-fast-out green v-img--reveal"
-                  style="height: 100%;"
-                ></div>
-              </v-expand-transition>
-            </v-img>
-          </v-hover>
+      <v-flex v-for="domain in domains" :key="domain.title" xs12 sm6 md3 lg3 xl3>
+        <v-card hover flat color="transparent" :style="{'cursor':'context-menu'}">
+          <v-card-title class="justify-center">
+            <v-flex text-xs-center subheading font-weight-bold>{{domain.title}}</v-flex>
+          </v-card-title>
+          <v-card-text class="text-xs-center caption">{{domain.summary}}</v-card-text>
         </v-card>
       </v-flex>
     </v-layout>
@@ -62,78 +41,51 @@
 export default {
   metaInfo: {
     title: 'Services',
-    titleTemplate: "%s ← Tuan anhLee",
+    titleTemplate: '%s ← Le Xuan Tuan Anh',
     meta: [
-     
+
     ]
   },
   data () {
     return {
-      clients: [
+      domains: [
         {
-          name: 'Brandly',
-          src: 'https://i.imgur.com/BLJ16wb.png',
-          href: 'https://www.brandly.com/'
+          title: 'Partner Management',
+          summary: 'Channel partner onboarding, deal registration, MDF workflows, approval states, SSO, and CRM synchronization.'
         },
         {
-          name: 'EEVOY',
-          src: 'https://i.imgur.com/lIJePVb.png',
-          href: 'https://www.eevoy.com/'
+          title: 'CRM',
+          summary: 'Opportunities, quotes, subcontract, contract, invoice, and financial reporting flows.'
         },
         {
-          name: 'Riders Share',
-          src: 'https://i.imgur.com/pgkY80b.png',
-          href: 'https://www.riders-share.com/'
+          title: 'Asset Management',
+          summary: 'Assets, models, tickets, transactions, journals, audit, export, and recursive processing.'
         },
         {
-          name: 'Esthetician Connection',
-          src:
-            'https://estheticianconnection.com/wp-content/uploads/2019/01/EC-logo.png',
-          href: 'https://estheticianconnection.com/'
+          title: 'Reservation Systems',
+          summary: 'CRS and FIT business logic, site controller integration, crawling, and release support.'
         },
         {
-          name: 'Goldentimepieces',
-          src: 'https://i.imgur.com/sEybxZ5.png',
-          href: 'https://goldentimepieces.com/'
-        },
-        {
-          name: 'MFS-EMMAUS',
-          src: 'https://i.imgur.com/33xPmQ8.png',
-          href: 'https://mfs-emmaus.ba/'
-        },
-        {
-          name: 'Scanlister',
-          src: 'https://i.imgur.com/5K7h7c4.png',
-          href: 'https://www.scanlister.com/'
-        },
-        {
-          name: 'Unbroken Designs',
-          src: 'https://i.imgur.com/kDLRh64.png',
-          href: 'https://www.unbrokendesigns.com/'
-        },
-        {
-          name: 'VilaShirts',
-          src: 'https://i.imgur.com/Fg26T32.png',
-          href: 'https://www.instagram.com/_vilashirts_/'
+          title: 'Manufacturing',
+          summary: 'Product, order, fulfillment, stock, production, and import-export management modules.'
         }
       ],
       services: [
         {
-          src: 'https://i.imgur.com/GvTt5GG.png',
-          title: 'Web Development'
+          icon: 'fas fa-code',
+          title: 'Full-stack Development'
         },
         {
-          src: 'https://i.imgur.com/g74mGuU.png',
-          title: 'Web Design'
-        },
-
-        {
-          src: 'https://i.imgur.com/wXLtLKy.png',
-          title: 'Video Editing'
+          icon: 'fas fa-sitemap',
+          title: 'System Architecture'
         },
         {
-          src: 'https://i.imgur.com/tcZnDep.png',
-          title: 'Advertising'
+          icon: 'fab fa-aws',
+          title: 'Cloud & DevOps'
+        },
+        {
+          icon: 'fas fa-users',
+          title: 'DevOps Engineering'
         }
       ]
     }
@@ -141,7 +93,4 @@ export default {
 }
 </script>
 <style >
-.v-img--reveal {
-  opacity: 0.3;
-}
 </style>

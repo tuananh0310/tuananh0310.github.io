@@ -8,8 +8,8 @@
         </h2>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fas fa-map-marker-alt</v-icon>
-          <span>Ha Noi</span>
-          <span class="green--text">Viet Nam</span>
+          <span>No. 105, Yen Hoa Ward, Cau Giay District, </span>
+          <span class="green--text">Hanoi</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fas fa-envelope</v-icon>
@@ -18,13 +18,13 @@
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fas fa-phone</v-icon>
-          <span>+8496</span>
-          <span class="green--text">798 3582</span>
+          <span>+84</span>
+          <span class="green--text">967 983 582</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fas fa-check</v-icon>
-          <span>Freelance</span>
-          <span class="green--text">Available</span>
+          <span>Product-oriented</span>
+          <span class="green--text">Full-stack Engineer</span>
         </div>
       </v-flex>
 
@@ -91,7 +91,7 @@ import {
 export default {
   metaInfo: {
     title: 'Contact',
-    titleTemplate: "%s ← Tuan anhLee",
+    titleTemplate: '%s ← Le Xuan Tuan Anh',
     meta: [
       {
         name: 'description',

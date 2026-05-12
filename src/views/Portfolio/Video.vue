@@ -44,9 +44,9 @@ import { PlyrVideo } from 'vue-plyr'
 export default {
   metaInfo: {
     title: 'Video Portfolio',
-    titleTemplate: "%s ← Tuan anhLee",
+    titleTemplate: '%s ← Le Xuan Tuan Anh',
     meta: [
-      
+
     ]
   },
   components: { plyr: PlyrVideo },

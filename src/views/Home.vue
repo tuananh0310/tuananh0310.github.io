@@ -23,7 +23,7 @@
 
     <br>
 
-    <vue-typer class="headline" :repeat="0" text="Tuan anhLee"></vue-typer>
+    <vue-typer class="headline" :repeat="0" text="Le Xuan Tuan Anh"></vue-typer>
     <vue-typer
       :text="text1"
       :repeat="Infinity"
@@ -48,11 +48,11 @@
             </h3>
             <div>
               <p>
-                Hello! I’m Tuan anhLee. I'm a software developer who
-                is passionate about Php<span
-                  class="green--text font-weight-bold"
-                >VUE</span>, building great user experiences,
-                fighting for simplicity over complexity and constantly learning.
+                Hello! I’m Le Xuan Tuan Anh. I'm a senior full-stack developer
+                and devops engineer with 4,5+ years of experience in Vue.js,
+                Laravel, and AWS, focused on scalable systems, clean
+                architecture, cloud deployment, CI/CD, code review, and
+                observability.
               </p>
             </div>
           </div>
@@ -92,62 +92,51 @@
 </template>
 
 <script>
-import { VueTyper } from "vue-typer";
-import VueCompareImage from "vue-compare-image";
+import { VueTyper } from 'vue-typer'
+import VueCompareImage from 'vue-compare-image'
 
 export default {
   metaInfo: {
-    title: "Home",
-    titleTemplate: "%s ← Tuan anhLee",
+    title: 'Home',
+    titleTemplate: '%s ← Le Xuan Tuan Anh',
     meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "description", content: "Tuan anhLee's Portfolio" },
-      { charset: "utf-8" },
-      { property: "og:title", content: "Tuan anhLee" },
-      { property: "og:site_name", content: "Tuan anhLee" },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://eldin.space" },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'description', content: 'Full-stack Engineer portfolio of Le Xuan Tuan Anh' },
+      { charset: 'utf-8' },
+      { property: 'og:title', content: 'Le Xuan Tuan Anh' },
+      { property: 'og:site_name', content: 'Le Xuan Tuan Anh' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://tuananh0310.github.io/portfolio/' },
       {
-        property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
+        property: 'og:image',
+        content: 'https://i.imgur.com/Dcz2PGx.jpg'
       },
-      { property: "og:description", content: "Tuan anhLee's Portfolio" }
+      { property: 'og:description', content: 'Full-stack Engineer portfolio of Le Xuan Tuan Anh' }
     ]
   },
   components: {
-    "vue-typer": VueTyper,
+    'vue-typer': VueTyper,
     VueCompareImage
   },
-  data() {
+  data () {
     return {
       icons: [
-        { href: "https://github.com/tuananh0310", icon: "fab fa-github" },
-        { href: "https://twitter.com/lxuntunah", icon: "fab fa-twitter" },
-        // {
-        //   href: "https://www.linkedin.com/in/eldin-zaimovic",
-        //   icon: "fab fa-linkedin-in"
-        // },
-        // {
-        //   href: "https://www.xing.com/profile/Eldin_Zaimovic?sc_o=mxb_p",
-        //   icon: "fab fa-xing"
-        // },
-        {
-          href: "https://www.facebook.com/tuananhzzzzzz/",
-          icon: "fab fa-facebook-f"
-        },
-        { href: "https://www.instagram.com/atrogtihiu/", icon: "fab fa-instagram" }
+        { href: 'https://github.com/tuananh0310', icon: 'fab fa-github' },
+        { href: 'https://www.linkedin.com/in/anhlxt', icon: 'fab fa-linkedin-in' },
+        { href: 'mailto:tuananhptit0310@gmail.com', icon: 'fas fa-envelope' },
+        { href: 'tel:+84967983582', icon: 'fas fa-phone' }
       ],
-      text1: ["Front-End Developer", "Web Developer", "Web Designer"],
-      leftImage2: "https://i.ibb.co/Y0wqHfF/132609301-2787100841529679-5932591408080452072-n.jpg",
-      rightImage2: "https://i.ibb.co/ySJY1c4/135276546-2792917140948049-1618936471956078864-n.jpg",
-      leftImage: "https://i.ibb.co/Y0wqHfF/132609301-2787100841529679-5932591408080452072-n.jpg",
-      rightImage: "https://i.ibb.co/ySJY1c4/135276546-2792917140948049-1618936471956078864-n.jpg",
+      text1: ['Senior Full-stack Developer', 'DevOps Engineer', 'Vue 3 Developer', 'Laravel 12 Developer', 'AWS Certified Developer'],
+      leftImage2: 'https://i.ibb.co/Y0wqHfF/132609301-2787100841529679-5932591408080452072-n.jpg',
+      rightImage2: 'https://i.ibb.co/ySJY1c4/135276546-2792917140948049-1618936471956078864-n.jpg',
+      leftImage: 'https://i.ibb.co/Y0wqHfF/132609301-2787100841529679-5932591408080452072-n.jpg',
+      rightImage: 'https://i.ibb.co/ySJY1c4/135276546-2792917140948049-1618936471956078864-n.jpg',
       sliderLine: 0,
       hSize: 0,
       sliderPosition: 0.5
-    };
+    }
   }
-};
+}
 </script>
 <style>
 @keyframes rocking {
@@ -164,6 +153,7 @@ export default {
 .vue-typer {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
 .vue-typer .custom.char.typed {
   color: green;
 }
@@ -182,4 +172,3 @@ export default {
   background-color: #e91e63;
 }
 </style>
-
