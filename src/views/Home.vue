@@ -1,25 +1,11 @@
 <template>
   <v-layout column justify-center align-center class="mt-4 pt-2">
-    <VueCompareImage
-      class="hidden-md-and-down"
-      hover
-      :style="{ maxWidth: '277px', 'border-radius': '45%' }"
-      :sliderLineWidth="sliderLine"
-      :handleSize="hSize"
-      :leftImage="leftImage"
-      :rightImage="rightImage"
-      :sliderPositionPercentage="sliderPosition"
-    />
-    <VueCompareImage
-      class="hidden-lg-and-up"
-      hover
-      :style="{ maxWidth: '400px', 'border-radius': '45%' }"
-      :sliderLineWidth="sliderLine"
-      :handleSize="hSize"
-      :leftImage="leftImage2"
-      :rightImage="rightImage2"
-      :sliderPositionPercentage="sliderPosition"
-    />
+    <v-img
+      class="home-main-image"
+      src="/_SUN6859.JPG"
+      alt="Le Xuan Tuan Anh"
+      aspect-ratio="1"
+    ></v-img>
 
     <br>
 
@@ -49,8 +35,8 @@
             <div>
               <p>
                 Hello! I’m Le Xuan Tuan Anh. I'm a senior full-stack developer
-                and devops engineer with 4,5+ years of experience in Vue.js,
-                Laravel, and AWS, focused on scalable systems, clean
+                and devops engineer with 4+ years of experience in Vue.js/React,
+                Laravel, NestJS, and AWS, focused on scalable systems, clean
                 architecture, cloud deployment, CI/CD, code review, and
                 observability.
               </p>
@@ -93,7 +79,6 @@
 
 <script>
 import { VueTyper } from 'vue-typer'
-import VueCompareImage from 'vue-compare-image'
 
 export default {
   metaInfo: {
@@ -115,8 +100,7 @@ export default {
     ]
   },
   components: {
-    'vue-typer': VueTyper,
-    VueCompareImage
+    'vue-typer': VueTyper
   },
   data () {
     return {
@@ -126,14 +110,7 @@ export default {
         { href: 'mailto:tuananhptit0310@gmail.com', icon: 'fas fa-envelope' },
         { href: 'tel:+84967983582', icon: 'fas fa-phone' }
       ],
-      text1: ['Senior Full-stack Developer', 'DevOps Engineer', 'Vue 3 Developer', 'Laravel 12 Developer', 'AWS Certified Developer'],
-      leftImage2: 'https://i.ibb.co/Y0wqHfF/132609301-2787100841529679-5932591408080452072-n.jpg',
-      rightImage2: 'https://i.ibb.co/ySJY1c4/135276546-2792917140948049-1618936471956078864-n.jpg',
-      leftImage: 'https://i.ibb.co/Y0wqHfF/132609301-2787100841529679-5932591408080452072-n.jpg',
-      rightImage: 'https://i.ibb.co/ySJY1c4/135276546-2792917140948049-1618936471956078864-n.jpg',
-      sliderLine: 0,
-      hSize: 0,
-      sliderPosition: 0.5
+      text1: ['Senior Full-stack Developer', 'DevOps Engineer', 'AWS Certified Developer/Architect']
     }
   }
 }
@@ -152,6 +129,23 @@ export default {
 
 .vue-typer {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.home-main-image {
+  width: 277px;
+  max-width: 100%;
+  border-radius: 45%;
+  overflow: hidden;
+}
+
+.home-main-image .v-image__image {
+  height: 127%;
+}
+
+@media (max-width: 1263px) {
+  .home-main-image {
+    width: 400px;
+  }
 }
 
 .vue-typer .custom.char.typed {
