@@ -115,7 +115,7 @@ export default {
   },
   computed: {
     homeImage () {
-      return './_SUN68591.JPG'
+      return 'https://i.postimg.cc/Qjw5Vq48/SUN68591.jpg'
     }
   }
 }
