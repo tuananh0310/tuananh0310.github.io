@@ -115,7 +115,7 @@ export default {
   },
   computed: {
     homeImage () {
-      return `${process.env.BASE_URL}_SUN68591.JPG`
+      return './_SUN68591.JPG'
     }
   }
 }
