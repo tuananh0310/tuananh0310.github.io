@@ -2,7 +2,7 @@
   <v-layout column justify-center align-center class="mt-4 pt-2">
     <v-img
       class="home-main-image"
-      :src="`${process.env.BASE_URL}_SUN68591.JPG`"
+      :src="homeImage"
       alt="Le Xuan Tuan Anh"
       aspect-ratio="1"
     ></v-img>
@@ -111,6 +111,11 @@ export default {
         { href: 'tel:+84967983582', icon: 'fas fa-phone' }
       ],
       text1: ['Senior Full-stack Developer', 'DevOps Engineer', 'AWS Certified Developer/Architect']
+    }
+  },
+  computed: {
+    homeImage () {
+      return `${process.env.BASE_URL}_SUN68591.JPG`
     }
   }
 }
