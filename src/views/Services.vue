@@ -54,8 +54,8 @@ export default {
           summary: 'Channel partner onboarding, deal registration, MDF workflows, approval states, SSO, and CRM synchronization.'
         },
         {
-          title: 'CRM',
-          summary: 'Opportunities, quotes, subcontract, contract, invoice, and financial reporting flows.'
+          title: 'CRM / Payroll',
+          summary: 'Opportunities, quotes, subcontract, contract, invoice, KPI, incentive rate, RBAC, Azure AD SSO, CRM/Vtiger synchronization, and financial reporting flows.'
         },
         {
           title: 'Asset Management',

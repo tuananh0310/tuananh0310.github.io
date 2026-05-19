@@ -52,7 +52,8 @@
                 <strong>FPT Smart Cloud</strong>
                 <div class="caption mb-2">Fullstack Engineer</div>
                 <ul class="caption mb-2 pl-3">
-                  <li>Implemented CRM and Asset Management systems under Agile Scrum.</li>
+                  <li>Implemented CRM, Asset Management, and Payroll/Sales Incentive systems under Agile Scrum.</li>
+                  <li>Built Payroll/Sales Incentive features with React, Vite, NestJS, TypeScript, MySQL, TypeORM, Azure AD SSO, JWT, RBAC, CRM/Vtiger synchronization, and Tailwind dashboards.</li>
                   <li>Mentored interns and freshers, reviewed code, and shared AWS/SOLID knowledge.</li>
                   <li>Completed the Opportunities to Invoices flow and joined AIverse Hackathon 2025.</li>
                 </ul>
@@ -71,8 +72,12 @@
                 <div class="caption mb-2">Software Engineer</div>
                 <ul class="caption mb-2 pl-3">
                   <li>Built Laravel, Vue.js, and MySQL systems across multiple business domains.</li>
+                  <li>Handled DevOps tasks on AWS using EC2, S3, CloudFront, Linux, and Nginx, including deployment, server configuration, SSL/domain setup, log review, and release support.</li>
                   <li>Collaborated with leaders and PMs to design and implement practical solutions.</li>
-                  <li>Received MVP Employee Q3 2023 and 1st place at CnctorJapan Hackathon 2024.</li>
+                  <li>
+                    Received MVP Employee Q3 2023 and 1st place at
+                    <a href="https://sg.wantedly.com/companies/cnctor/post_articles/889574" target="_blank" rel="noopener">CnctorJapan Hackathon 2024</a>.
+                  </li>
                 </ul>
               </v-flex>
             </v-layout>
@@ -144,12 +149,12 @@
           <span class="green--text">Skills</span>
         </h2>
         <br>
-        <p><strong>Frontend:</strong> Vue.js, Vue 3, JavaScript (ES6+), TypeScript, HTML5, CSS3, Pinia, Vuetify 3, Bootstrap, CoreUI</p>
-        <p><strong>Backend:</strong> Laravel 12, PHP 8.2, PHP 7.x/8.x, C# (.NET basic), RESTful API, JWT, Spatie Permission</p>
+        <p><strong>Frontend:</strong> Vue.js, React, Vue 3, JavaScript (ES6+), TypeScript, HTML5, CSS3, Pinia, Vuetify 3, Bootstrap, CoreUI</p>
+        <p><strong>Backend:</strong> Laravel 12, Node.js, NestJS, PHP 8.2, PHP 7.x/8.x, C# (.NET basic), RESTful API, JWT, Spatie Permission</p>
         <p><strong>Database:</strong> MySQL 8.0, PostgreSQL, Redis, relational design, JSON columns, polymorphic relationships</p>
         <p><strong>Cloud &amp; DevOps:</strong> AWS, Docker, Kubernetes, ArgoCD, Jenkins, GitHub/GitLab CI/CD, Nginx, CloudWatch, API Gateway, Lambda, S3, RDS, SNS, SQS</p>
         <p><strong>Software Engineering:</strong> OOP, System Design, Clean Code, SOLID, Design Patterns, Microservices, Message Queue, RBAC, WebSocket</p>
-        <p><strong>Tools:</strong> Jira, Confluence, Slack, Backlog, Sentry, GitHub Copilot, ChatGPT, Cursor</p>
+        <p><strong>Tools:</strong> Jira, Confluence, Slack, Backlog, Sentry, ChatGPT, Cursor, Claude</p>
       </v-flex>
       <div class="mt-4 pt-2">
         <v-btn

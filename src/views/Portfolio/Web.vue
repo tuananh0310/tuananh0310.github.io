@@ -114,12 +114,12 @@ export default {
         },
         {
           dialog: false,
-          title: 'CRM (Vtiger)',
+          title: 'CRM (Vtiger) / Payroll Sales Incentive',
           period: 'DEC 2024 - DEC 2025',
           role: 'Fullstack Engineer',
-          team: 'Team size: 9 members including Developers, BA, Tester, and PM',
-          summary: 'Participated in Opportunities, Quotes, Subcontract, Contracts, and Invoices modules. Reviewed team code and applied SOLID principles, Strategy, Builder, Dependency Injection, and Factory Operation patterns.',
-          tech: ['PHP', 'JavaScript', 'MySQL'],
+          team: 'FPT Smart Cloud',
+          summary: 'Participated in CRM Opportunities, Quotes, Subcontract, Contracts, and Invoices modules, then developed a Payroll/Sales Incentive management system with Azure AD SSO, JWT authentication, role-based permissions, KPI and incentive rate CRUD modules, CRM/Vtiger user synchronization, and Tailwind dashboard UI.',
+          tech: ['PHP', 'JavaScript', 'React', 'Vite', 'NestJS', 'TypeScript', 'MySQL', 'TypeORM', 'Microsoft Azure AD SSO', 'JWT', 'Tailwind CSS', 'Material Tailwind'],
           poster: 'https://i.imgur.com/nVqtTAf.png'
         },
         {

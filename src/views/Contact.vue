@@ -8,7 +8,7 @@
         </h2>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fas fa-map-marker-alt</v-icon>
-          <span>No. 105, Yen Hoa Ward, Cau Giay District, </span>
+          <span>No. 113, Yen Hoa Ward, Cau Giay District, </span>
           <span class="green--text">Hanoi</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
