@@ -2,7 +2,7 @@
   <v-layout column justify-center align-center class="mt-4 pt-2">
     <v-img
       class="home-main-image"
-      src="/_SUN6859.JPG"
+      src="/_SUN68591.JPG"
       alt="Le Xuan Tuan Anh"
       aspect-ratio="1"
     ></v-img>
