@@ -2,7 +2,7 @@
   "name": "anhlxt",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tuananh0310.github.io/portfolio/",
+  "homepage": "https://tuananh0310.github.io/",
   "scripts": {
     "deploy": "npm run build && gh-pages -d dist",
     "serve": "vue-cli-service serve",

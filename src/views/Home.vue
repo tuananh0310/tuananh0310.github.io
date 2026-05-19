@@ -91,7 +91,7 @@ export default {
       { property: 'og:title', content: 'Le Xuan Tuan Anh' },
       { property: 'og:site_name', content: 'Le Xuan Tuan Anh' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://tuananh0310.github.io/portfolio/' },
+      { property: 'og:url', content: 'https://tuananh0310.github.io/' },
       {
         property: 'og:image',
         content: 'https://i.imgur.com/Dcz2PGx.jpg'
