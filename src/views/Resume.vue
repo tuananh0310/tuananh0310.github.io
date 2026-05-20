@@ -37,6 +37,7 @@
                   <li>Architected Partner Portal V2 with Laravel 12, PHP 8.2, Vue 3, TypeScript, and Vuetify 3.</li>
                   <li>Built approval workflows, real-time notifications, RBAC, and integrations with FPT ID SSO, S3, E-Contract, and CRM.</li>
                   <li>Led Docker, Kubernetes, and GitOps delivery with Jenkins to ArgoCD migration.</li>
+                  <li>Set up observability stack with Prometheus, Grafana, and Loki for metrics monitoring, dashboards, and centralized log aggregation.</li>
                 </ul>
               </v-flex>
             </v-layout>
@@ -152,7 +153,7 @@
         <p><strong>Frontend:</strong> Vue.js, React, Vue 3, JavaScript (ES6+), TypeScript, HTML5, CSS3, Pinia, Vuetify 3, Bootstrap, CoreUI</p>
         <p><strong>Backend:</strong> Laravel 12, Node.js, NestJS, PHP 8.2, PHP 7.x/8.x, C# (.NET basic), RESTful API, JWT, Spatie Permission</p>
         <p><strong>Database:</strong> MySQL 8.0, PostgreSQL, Redis, relational design, JSON columns, polymorphic relationships</p>
-        <p><strong>Cloud &amp; DevOps:</strong> AWS, Docker, Kubernetes, ArgoCD, Jenkins, GitHub/GitLab CI/CD, Nginx, CloudWatch, API Gateway, Lambda, S3, RDS, SNS, SQS</p>
+        <p><strong>Cloud &amp; DevOps:</strong> AWS, Docker, Kubernetes, ArgoCD, Jenkins, GitHub/GitLab CI/CD, Nginx, Prometheus, Grafana, Loki, CloudWatch, API Gateway, Lambda, S3, RDS, SNS, SQS</p>
         <p><strong>Software Engineering:</strong> OOP, System Design, Clean Code, SOLID, Design Patterns, Microservices, Message Queue, RBAC, WebSocket</p>
         <p><strong>Tools:</strong> Jira, Confluence, Slack, Backlog, Sentry, ChatGPT, Cursor, Claude</p>
       </v-flex>
