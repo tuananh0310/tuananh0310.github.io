@@ -146,12 +146,25 @@
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-flex xs12 sm12 md8 lg8 xl8 class="mx-2 pt-4">
         <h2>
+          <span>Career</span>
+          <span class="green--text">Goal</span>
+        </h2>
+        <br>
+        <p>
+          In the next 3-5 years, aim to grow into a <strong>Principal Engineer</strong> role -
+          driving technical strategy, system architecture, and cross-team engineering
+          excellence at scale, while mentoring senior engineers and shaping long-term
+          technology direction.
+        </p>
+      </v-flex>
+      <v-flex xs12 sm12 md8 lg8 xl8 class="mx-2 pt-4">
+        <h2>
           <span>Coding</span>
           <span class="green--text">Skills</span>
         </h2>
         <br>
         <p><strong>Frontend:</strong> Vue.js, React, Vue 3, JavaScript (ES6+), TypeScript, HTML5, CSS3, Pinia, Vuetify 3, Bootstrap, CoreUI</p>
-        <p><strong>Backend:</strong> Laravel 12, Node.js, NestJS, PHP 8.2, PHP 7.x/8.x, C# (.NET basic), RESTful API, JWT, Spatie Permission</p>
+        <p><strong>Backend:</strong> Laravel 12, Node.js, NestJS, PHP 8.2, PHP 7.x/8.x, C# (.NET basic), RESTful API, JWT, Spatie Permission. Willing to switch to another language (Go, Java, Python, etc.)</p>
         <p><strong>Database:</strong> MySQL 8.0, PostgreSQL, Redis, relational design, JSON columns, polymorphic relationships</p>
         <p><strong>Cloud &amp; DevOps:</strong> AWS, Docker, Kubernetes, ArgoCD, Jenkins, GitHub/GitLab CI/CD, Nginx, Prometheus, Grafana, Loki, CloudWatch, API Gateway, Lambda, S3, RDS, SNS, SQS</p>
         <p><strong>Software Engineering:</strong> OOP, System Design, Clean Code, SOLID, Design Patterns, Microservices, Message Queue, RBAC, WebSocket</p>
