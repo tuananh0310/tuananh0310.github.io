@@ -34,10 +34,10 @@
                 <strong>FPT Corporation (FCI)</strong>
                 <div class="caption mb-2">Senior Full-Stack Developer | DevOps Engineer</div>
                 <ul class="caption mb-2 pl-3">
-                  <li>Architected Partner Portal V2 with Laravel 12, PHP 8.2, Vue 3, TypeScript, and Vuetify 3.</li>
-                  <li>Built approval workflows, real-time notifications, RBAC, and integrations with FPT ID SSO, S3, E-Contract, and CRM.</li>
-                  <li>Led Docker, Kubernetes, and GitOps delivery with Jenkins to ArgoCD migration.</li>
-                  <li>Set up observability stack with Prometheus, Grafana, and Loki for metrics monitoring, dashboards, and centralized log aggregation.</li>
+                  <li>Owned end-to-end delivery of Partner Portal V2, an enterprise platform digitalizing partner onboarding, deal registration, and marketing fund operations.</li>
+                  <li>Drove multi-stage approval workflows and corporate integrations (SSO, digital contracting, cloud storage, CRM) to unify the partner experience.</li>
+                  <li>Defined cloud-native delivery (Docker, Kubernetes, GitOps) and the observability and access governance foundation for enterprise reliability.</li>
+                  <li>Mentored engineers, set technical standards, and authored architecture and handover documentation to enable long-term maintainability.</li>
                 </ul>
               </v-flex>
             </v-layout>
