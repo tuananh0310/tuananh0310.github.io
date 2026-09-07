@@ -34,11 +34,11 @@
             </h3>
             <div>
               <p>
-                Hello! I’m Le Xuan Tuan Anh. I'm a senior full-stack developer
-                and devops engineer with 4+ years of experience in Vue.js/React,
+                Hello! I’m Le Xuan Tuan Anh. I'm a Senior Backend &amp; Platform
+                Engineer with 4+ years of experience in distributed systems,
                 Laravel, NestJS, and AWS, focused on scalable systems, clean
-                architecture, cloud deployment, CI/CD, code review, and
-                observability.
+                architecture, cloud deployment, CI/CD, and high-reliability
+                enterprise platforms.
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ export default {
     titleTemplate: '%s ← Le Xuan Tuan Anh',
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: 'Full-stack Engineer portfolio of Le Xuan Tuan Anh' },
+      { name: 'description', content: 'Backend / Platform Engineer portfolio of Le Xuan Tuan Anh' },
       { charset: 'utf-8' },
       { property: 'og:title', content: 'Le Xuan Tuan Anh' },
       { property: 'og:site_name', content: 'Le Xuan Tuan Anh' },
@@ -96,7 +96,7 @@ export default {
         property: 'og:image',
         content: 'https://i.imgur.com/Dcz2PGx.jpg'
       },
-      { property: 'og:description', content: 'Full-stack Engineer portfolio of Le Xuan Tuan Anh' }
+      { property: 'og:description', content: 'Backend / Platform Engineer portfolio of Le Xuan Tuan Anh' }
     ]
   },
   components: {
@@ -110,7 +110,7 @@ export default {
         { href: 'mailto:tuananhptit0310@gmail.com', icon: 'fas fa-envelope' },
         { href: 'tel:+84967983582', icon: 'fas fa-phone' }
       ],
-      text1: ['Senior Full-stack Developer', 'DevOps Engineer', 'AWS Certified Developer/Architect']
+      text1: ['Senior Backend Engineer', 'Platform Engineer', 'AWS Certified Developer/Architect']
     }
   },
   computed: {

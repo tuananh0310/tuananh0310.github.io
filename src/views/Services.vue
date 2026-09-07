@@ -72,8 +72,8 @@ export default {
       ],
       services: [
         {
-          icon: 'fas fa-code',
-          title: 'Full-stack Development'
+          icon: 'fas fa-server',
+          title: 'Backend Engineering'
         },
         {
           icon: 'fas fa-sitemap',
@@ -81,11 +81,11 @@ export default {
         },
         {
           icon: 'fab fa-aws',
-          title: 'Cloud & DevOps'
+          title: 'Cloud & Infrastructure'
         },
         {
-          icon: 'fas fa-users',
-          title: 'DevOps Engineering'
+          icon: 'fas fa-cogs',
+          title: 'Platform Engineering'
         }
       ]
     }

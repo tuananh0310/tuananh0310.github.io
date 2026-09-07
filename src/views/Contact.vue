@@ -24,7 +24,7 @@
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fas fa-check</v-icon>
           <span>Product-oriented</span>
-          <span class="green--text">Full-stack Engineer</span>
+          <span class="green--text">Backend / Platform Engineer</span>
         </div>
       </v-flex>
 

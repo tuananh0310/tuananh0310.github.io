@@ -84,7 +84,7 @@ export default {
           dialog: false,
           title: 'Partner Portal V2',
           period: 'JAN 2026 - Present',
-          role: 'Senior Full-Stack Developer | DevOps Engineer',
+          role: 'Senior Backend / Platform Engineer',
           team: "Enterprise-grade Channel Partner Management System for FPT Cloud International's distribution network",
           summary: 'Architected and led a full-stack partner management platform with Laravel 12 backend, Vue 3 TypeScript SPA, real-time workflows, external integrations, and Kubernetes/GitOps delivery.',
           highlights: [

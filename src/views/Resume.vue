@@ -32,7 +32,7 @@
               </v-flex>
               <v-flex class="pl-2">
                 <strong>FPT Corporation (FCI)</strong>
-                <div class="caption mb-2">Senior Full-Stack Developer | DevOps Engineer</div>
+                <div class="caption mb-2">Senior Backend / Platform Engineer</div>
                 <ul class="caption mb-2 pl-3">
                   <li>Owned end-to-end delivery of Partner Portal V2, an enterprise platform digitalizing partner onboarding, deal registration, and marketing fund operations.</li>
                   <li>Drove multi-stage approval workflows and corporate integrations (SSO, digital contracting, cloud storage, CRM) to unify the partner experience.</li>
@@ -198,7 +198,7 @@ export default {
       },
       {
         name: 'keywords',
-        content: 'Resume, Le Xuan Tuan Anh, Fullstack Engineer, Vue.js, Laravel, PHP, AWS, JavaScript, TypeScript, MySQL'
+        content: 'Resume, Le Xuan Tuan Anh, Backend Engineer, Platform Engineer, AWS, Laravel, NestJS, Kubernetes, DevOps, Docker, MySQL, System Design'
       }
     ]
   },
