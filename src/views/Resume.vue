@@ -34,10 +34,11 @@
                 <strong>FPT Corporation (FCI)</strong>
                 <div class="caption mb-2">Senior Backend / Platform Engineer</div>
                 <ul class="caption mb-2 pl-3">
-                  <li>Owned end-to-end delivery of Partner Portal V2, an enterprise platform digitalizing partner onboarding, deal registration, and marketing fund operations.</li>
-                  <li>Drove multi-stage approval workflows and corporate integrations (SSO, digital contracting, cloud storage, CRM) to unify the partner experience.</li>
-                  <li>Defined cloud-native delivery (Docker, Kubernetes, GitOps) and the observability and access governance foundation for enterprise reliability.</li>
-                  <li>Mentored engineers, set technical standards, and authored architecture and handover documentation to enable long-term maintainability.</li>
+                  <li>Rated A in the Q1 2026 performance review.</li>
+                  <li>Owned the backend of Partner Portal V2 end to end: REST APIs, data model, and multi-stage approval workflows for partner onboarding, deal registration, marketing fund (MDF) claims, and revenue dashboards, with queue workers, schedulers, and a WebSocket server for async and real-time work.</li>
+                  <li>Integrated FPT ID SSO (OAuth2), LMS webhooks with user sync, S3, and CRM/Vtiger; built API-key auth, RBAC, and audit logging for partner access, and led remediation of three external penetration-test rounds (private S3 with presigned URLs, IDOR checks, rate limiting, upload validation).</li>
+                  <li>Shipped staging and production releases through the SRE team's ArgoCD GitOps repository (config maps, Vault-backed secrets, ingress including WebSocket routing), built the non-root container images with health probes, and wrote the SRE handover runbook (deploy, scaling, troubleshooting, go-live checklist).</li>
+                  <li>Set up Sentry error tracking and cron monitoring for scheduled jobs, routed application logs to the central Grafana stack, resolved SonarQube findings, and mentored engineers.</li>
                 </ul>
               </v-flex>
             </v-layout>
@@ -53,10 +54,11 @@
                 <strong>FPT Smart Cloud</strong>
                 <div class="caption mb-2">Fullstack Engineer</div>
                 <ul class="caption mb-2 pl-3">
-                  <li>Implemented CRM, Asset Management, and Payroll/Sales Incentive systems under Agile Scrum.</li>
-                  <li>Built Payroll/Sales Incentive features with React, Vite, NestJS, TypeScript, MySQL, TypeORM, Azure AD SSO, JWT, RBAC, CRM/Vtiger synchronization, and Tailwind dashboards.</li>
+                  <li>Received multiple awards in 2025, including an award at AIverse Hackathon 2025.</li>
+                  <li>Built backend features for CRM (Vtiger), Asset Management (Snipe-IT), and Payroll/Sales Incentive systems under Agile Scrum, including the Opportunity to Invoice flow.</li>
+                  <li>Built the Payroll/Sales Incentive service with NestJS, TypeScript, MySQL, and TypeORM: Azure AD SSO, JWT, RBAC, KPI and incentive-rate modules, and CRM user synchronization.</li>
+                  <li>Extended GitLab CI for the Asset Management service: tag-triggered image builds to a private registry and merge-request-gated test runs.</li>
                   <li>Mentored interns and freshers, reviewed code, and shared AWS/SOLID knowledge.</li>
-                  <li>Completed the Opportunities to Invoices flow and joined AIverse Hackathon 2025.</li>
                 </ul>
               </v-flex>
             </v-layout>
@@ -72,8 +74,8 @@
                 <strong>The First One JSC</strong>
                 <div class="caption mb-2">Software Engineer</div>
                 <ul class="caption mb-2 pl-3">
-                  <li>Built Laravel, Vue.js, and MySQL systems across multiple business domains.</li>
-                  <li>Handled DevOps tasks on AWS using EC2, S3, CloudFront, Linux, and Nginx, including deployment, server configuration, SSL/domain setup, log review, and release support.</li>
+                  <li>Built backend services and business workflows across multiple domains using PHP, .NET, MySQL, and PostgreSQL.</li>
+                  <li>Operated AWS production environments (EC2, S3, CloudFront, Linux, Nginx): deployments, server configuration, SSL/domain setup, log investigation, and release support.</li>
                   <li>Collaborated with leaders and PMs to design and implement practical solutions.</li>
                   <li>
                     Received MVP Employee Q3 2023 and 1st place at
@@ -152,9 +154,9 @@
         <br>
         <p>
           In the next 3-5 years, aim to grow into a <strong>Principal Engineer</strong> role -
-          driving technical strategy, system architecture, and cross-team engineering
-          excellence at scale, while mentoring senior engineers and shaping long-term
-          technology direction.
+          driving system architecture and reliability strategy (SLOs, observability,
+          incident response) across teams, while mentoring senior engineers and shaping
+          long-term technology direction.
         </p>
       </v-flex>
       <v-flex xs12 sm12 md8 lg8 xl8 class="mx-2 pt-4">
@@ -163,11 +165,13 @@
           <span class="green--text">Skills</span>
         </h2>
         <br>
-        <p><strong>Frontend:</strong> Vue.js, React, Vue 3, JavaScript (ES6+), TypeScript, HTML5, CSS3, Pinia, Vuetify 3, Bootstrap, CoreUI</p>
-        <p><strong>Backend:</strong> Laravel 12, Node.js, NestJS, PHP 8.2, PHP 7.x/8.x, C# (.NET basic), RESTful API, JWT, Spatie Permission. Willing to switch to another language (Go, Java, Python, etc.)</p>
-        <p><strong>Database:</strong> MySQL 8.0, PostgreSQL, Redis, relational design, JSON columns, polymorphic relationships</p>
-        <p><strong>Cloud &amp; DevOps:</strong> AWS, Docker, Kubernetes, ArgoCD, Jenkins, GitHub/GitLab CI/CD, Nginx, Prometheus, Grafana, Loki, CloudWatch, API Gateway, Lambda, S3, RDS, SNS, SQS</p>
-        <p><strong>Software Engineering:</strong> OOP, System Design, Clean Code, SOLID, Design Patterns, Microservices, Message Queue, RBAC, WebSocket</p>
+        <p><strong>Backend:</strong> Node.js (NestJS), PHP, Go, C# (.NET), Python, RESTful API design, OAuth2/SSO, JWT, RBAC, queues and background jobs, WebSocket. Willing to switch to another language (Java, Rust, etc.)</p>
+        <p><strong>Database:</strong> MySQL 8.0, PostgreSQL, Redis, schema design, indexing, query optimization</p>
+        <p><strong>SRE &amp; Observability:</strong> Prometheus, Grafana, Loki, Alertmanager, OpenTelemetry, Jaeger, Sentry, health checks and probes, autoscaling (HPA), PDBs, backup and restore, load testing (k6), runbooks</p>
+        <p><strong>Cloud &amp; Platform:</strong> AWS (EC2, S3, CloudFront, RDS, Lambda, API Gateway, SNS, SQS, CloudWatch), Kubernetes, Docker, ArgoCD (GitOps), HashiCorp Vault, Jenkins, GitLab CI, GitHub Actions, Nginx, Linux</p>
+        <p><strong>Security:</strong> OWASP remediation (IDOR, XSS, SQL injection, rate limiting), SonarQube, Trivy, govulncheck, gitleaks, Kubernetes NetworkPolicy and securityContext</p>
+        <p><strong>Software Engineering:</strong> OOP, System Design, Clean Code, SOLID, Design Patterns, Microservices, Message Queues, Event-driven design</p>
+        <p><strong>Frontend:</strong> Vue 3, React, TypeScript, Pinia, Vuetify</p>
         <p><strong>Tools:</strong> Jira, Confluence, Slack, Backlog, Sentry, ChatGPT, Cursor, Claude</p>
       </v-flex>
       <div class="mt-4 pt-2">
@@ -198,7 +202,7 @@ export default {
       },
       {
         name: 'keywords',
-        content: 'Resume, Le Xuan Tuan Anh, Backend Engineer, Platform Engineer, AWS, Laravel, NestJS, Kubernetes, DevOps, Docker, MySQL, System Design'
+        content: 'Resume, Le Xuan Tuan Anh, Backend Engineer, SRE, Site Reliability Engineering, Platform Engineer, AWS, Kubernetes, ArgoCD, GitOps, Observability, NestJS, Go, Docker, MySQL, System Design'
       }
     ]
   },

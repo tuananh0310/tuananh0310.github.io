@@ -35,7 +35,7 @@
             <div>
               <p>
                 Hello! I’m Le Xuan Tuan Anh. I'm a Senior Backend &amp; Platform
-                Engineer with 4+ years of experience in distributed systems,
+                Engineer with 5 years of experience in distributed systems,
                 Laravel, NestJS, and AWS, focused on scalable systems, clean
                 architecture, cloud deployment, CI/CD, and high-reliability
                 enterprise platforms.
