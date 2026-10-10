@@ -51,6 +51,13 @@
         margin: 1px 0;
       }
 
+      .headline {
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: 2px;
+        text-align: center;
+      }
+
       .contact {
         font-size: 10.8px;
         margin-top: 4px;
@@ -88,8 +95,9 @@
   </head>
   <body>
     <h1>Le Xuan Tuan Anh</h1>
+    <p class="headline">Senior Backend Engineer | SRE &amp; Platform</p>
     <p class="contact">
-      No. 113, Yen Hoa Ward, Cau Giay District, Hanoi |
+      No. 42, Lane 230, Me Tri Thuong Street, Me Tri Ward, Nam Tu Liem District, Hanoi City, Vietnam |
       +84 967 983 582 |
       tuananhptit0310@gmail.com |
       <a href="https://www.linkedin.com/in/anhlxt">linkedin.com/in/anhlxt</a> |
@@ -98,17 +106,20 @@
 
     <h2>About Me</h2>
     <p>
-      Senior Backend / Platform Engineer with 4+ years of experience in distributed
-      systems, clean architecture, AWS cloud infrastructure, Kubernetes, CI/CD,
-      code review, and system reliability in product-oriented environments.
+      Senior Backend Engineer with 5 years of experience building and running
+      production systems: API and data design, third-party integrations, background
+      jobs, and real-time messaging. Hands-on SRE practice across Kubernetes and GitOps
+      releases, secrets management, monitoring and error tracking, incident debugging,
+      and security hardening. Works across Node.js/NestJS, PHP, Go, and .NET. AWS
+      Certified Solutions Architect and Developer - Associate.
     </p>
 
     <h2>Career Goal</h2>
     <p>
       In the next 3-5 years, aim to grow into a Principal Engineer role - driving
-      technical strategy, system architecture, and cross-team engineering excellence
-      at scale, while mentoring senior engineers and shaping long-term technology
-      direction.
+      system architecture and reliability strategy (SLOs, observability, incident
+      response) across teams, while mentoring senior engineers and shaping long-term
+      technology direction.
     </p>
 
     <h2>Work Experience</h2>
@@ -122,10 +133,11 @@
         Cloud International's global distribution network.
       </p>
       <ul>
-        <li>Owned end-to-end delivery of Partner Portal V2, an enterprise platform digitalizing partner onboarding, deal registration, and marketing fund operations.</li>
-        <li>Drove multi-stage approval workflows and corporate integrations (SSO, digital contracting, cloud storage, CRM) to unify the partner experience.</li>
-        <li>Defined cloud-native delivery (Docker, Kubernetes, GitOps) and the observability and access governance foundation for enterprise reliability.</li>
-        <li>Mentored engineers, set technical standards, and authored architecture and handover documentation to enable long-term maintainability.</li>
+        <li>Rated A in the Q1 2026 performance review.</li>
+        <li>Owned the backend of Partner Portal V2 end to end: REST APIs, data model, and multi-stage approval workflows for partner onboarding, deal registration, marketing fund (MDF) claims, and revenue dashboards, with queue workers, schedulers, and a WebSocket server for async and real-time work.</li>
+        <li>Integrated FPT ID SSO (OAuth2), LMS webhooks with user sync, S3, and CRM/Vtiger; built API-key auth, RBAC, and audit logging for partner access, and led remediation of three external penetration-test rounds (private S3 with presigned URLs, IDOR checks, rate limiting, upload validation).</li>
+        <li>Shipped staging and production releases through the SRE team's ArgoCD GitOps repository (config maps, Vault-backed secrets, ingress including WebSocket routing), built the non-root container images with health probes, and wrote the SRE handover runbook (deploy, scaling, troubleshooting, go-live checklist).</li>
+        <li>Set up Sentry error tracking and cron monitoring for scheduled jobs, routed application logs to the central Grafana stack, resolved SonarQube findings, and mentored engineers.</li>
       </ul>
     </div>
 
@@ -135,11 +147,11 @@
         <span class="period">Dec 2024 - Dec 2025</span>
       </div>
       <ul>
-        <li>Implemented CRM, Asset Management, and Payroll/Sales Incentive systems under Agile Scrum, delivering features that improved financial reporting.</li>
-        <li>Built Payroll/Sales Incentive features with React, Vite, NestJS, TypeScript, MySQL, TypeORM, Azure AD SSO, JWT, RBAC, CRM/Vtiger synchronization, and Tailwind dashboards.</li>
+        <li>Received multiple awards in 2025, including an award at AIverse Hackathon 2025.</li>
+        <li>Built backend features for CRM (Vtiger), Asset Management (Snipe-IT), and Payroll/Sales Incentive systems under Agile Scrum, including the Opportunity to Quote, Contract, and Invoice flow that improved financial reporting.</li>
+        <li>Built the Payroll/Sales Incentive service with NestJS, TypeScript, MySQL, and TypeORM: Azure AD SSO, JWT, RBAC, KPI and incentive-rate modules, CRM user synchronization, and a React dashboard.</li>
+        <li>Extended GitLab CI for the Asset Management service: tag-triggered image builds pushed to a private registry, merge-request-gated test runs, and corporate proxy support.</li>
         <li>Mentored interns and freshers, reviewed code, and shared knowledge on AWS, SOLID, and scalable design.</li>
-        <li>Completed the Opportunities to Quote to SubContracts, Contracts, and Invoices flow.</li>
-        <li>Attended AIverse Hackathon 2025 and received a reward.</li>
       </ul>
     </div>
 
@@ -153,10 +165,10 @@
           MVP Employee of Q3 2023 and 1st Place Tra Da Team at
           <a href="https://sg.wantedly.com/companies/cnctor/post_articles/889574">CnctorJapan Hackathon and The First One 2024</a>.
         </li>
-        <li>Worked with various business logics using Laravel, Vue.js, MySQL, PostgreSQL, .NET, and jQuery.</li>
-        <li>Handled DevOps tasks on AWS using EC2, S3, CloudFront, Linux, and Nginx, including deployment, server configuration, SSL/domain setup, log review, and release support.</li>
+        <li>Built backend services and business workflows across multiple domains using PHP, .NET, MySQL, and PostgreSQL, including query optimization for data-heavy screens.</li>
+        <li>Operated AWS production environments (EC2, S3, CloudFront, Linux, Nginx): deployments, server configuration, SSL/domain setup, log investigation, and release support.</li>
         <li>Collaborated with leaders and PMs to develop and implement practical solutions.</li>
-        <li>Participated in technology presentations on JavaScript, Data Science, Laravel, and more.</li>
+        <li>Participated in internal technology talks on JavaScript, Data Science, backend frameworks, and more.</li>
       </ul>
     </div>
 
@@ -193,10 +205,10 @@
         <span class="period">Jan 2026 - Present</span>
       </div>
       <p>
-        Role: Senior Backend / Platform Engineer. Tech stack: Laravel 12,
-        PHP 8.2, Vue 3, TypeScript, Vuetify 3, Pinia, MySQL 8.0, Redis, Docker,
-        Kubernetes, ArgoCD, Jenkins, Nginx, Prometheus, Grafana, Loki, Laravel Reverb,
-        Laravel Echo, JWT, Sentry, S3, Maatwebsite Excel, TCPDF.
+        Role: Senior Backend / Platform Engineer. Backend: PHP 8.2, MySQL 8.0, Redis,
+        REST API, OAuth2 SSO, JWT, queue workers, schedulers, WebSocket, S3. Platform:
+        Docker, Kubernetes, ArgoCD (GitOps), HashiCorp Vault, Nginx, Sentry, Grafana.
+        Frontend: Vue 3, TypeScript.
       </p>
     </div>
     <div class="item">
@@ -205,9 +217,9 @@
         <span class="period">Apr 2025 - Dec 2025</span>
       </div>
       <p>
-        Developed assets, models, tickets, transactions, journals, and audit modules.
-        Implemented auditing, large data export, recursive processing, documentation,
-        unit and feature tests, and code reviews.
+        Developed asset, model, ticket, transaction, journal, and audit modules with
+        policy-based authorization. Implemented large data export, recursive processing,
+        unit and feature tests, GitLab CI image builds, documentation, and code reviews.
       </p>
     </div>
     <div class="item">
@@ -217,10 +229,9 @@
       </div>
       <p>
         Participated in Opportunities, Quotes, Subcontract, Contracts, and Invoices
-        modules. Also developed a Payroll/Sales Incentive management system with
-        React, Vite, NestJS, TypeScript, MySQL, TypeORM, Azure AD SSO, JWT,
-        role-based permissions, KPI and incentive rate CRUD modules, CRM/Vtiger
-        user synchronization, and Tailwind dashboard UI.
+        modules. Also developed a Payroll/Sales Incentive service with NestJS,
+        TypeScript, MySQL, TypeORM, Azure AD SSO, JWT, role-based permissions, KPI and
+        incentive rate modules, CRM/Vtiger user synchronization, and a React dashboard.
       </p>
     </div>
     <div class="item">
@@ -229,8 +240,9 @@
         <span class="period">Jun 2024 - Nov 2024</span>
       </div>
       <p>
-        Contributed to project base architecture and developed Product, Order,
-        Fulfillment, and Stock modules using Laravel, Vue.js, TypeScript, and MySQL.
+        Contributed to the base architecture and developed Product, Order, Fulfillment,
+        and Stock modules (PHP, TypeScript, MySQL). Set up the backend Docker and Nginx
+        environment.
       </p>
     </div>
     <div class="item">
@@ -249,8 +261,8 @@
         <span class="period">Jan 2023 - Oct 2023</span>
       </div>
       <p>
-        Built uniform rental management features using Laravel, Vue.js, and MySQL.
-        Supported interns and freshers, optimized queries, and added barcode scanning.
+        Built uniform rental management features (PHP, MySQL, Vue.js). Supported
+        interns and freshers, optimized queries, and added barcode scanning.
       </p>
     </div>
     <div class="item">
@@ -264,14 +276,50 @@
       </p>
     </div>
 
+    <h2>Personal Platform Projects</h2>
+    <p class="sub">
+      Common stack: Kubernetes, ArgoCD, Jenkins, GitHub Actions, SonarQube, Vault,
+      Prometheus, Grafana, Loki, non-root images.
+    </p>
+    <div class="item">
+      <div class="item-head">
+        <h3>Self-hosted Kubernetes Platform (learning4.uk)</h3>
+        <span class="period">Dec 2025 - Present</span>
+      </div>
+      <p>Live learning platform with GitOps self-heal, HPA autoscaling, backups, k6 load tests, and a sandboxed code-execution service.</p>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <h3>WebPhim - Video Streaming Platform (Go)</h3>
+        <span class="period">Sep 2026 - Present</span>
+      </div>
+      <p>Hexagonal Go backend (API, key service, worker) with encrypted HLS streaming; CI with lint, race tests, and gitleaks, and change-based CD to Kubernetes.</p>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <h3>Go E-commerce Microservices</h3>
+        <span class="period">Sep 2026</span>
+      </div>
+      <p>Five Go services with rate limiting and RBAC auditing; govulncheck-gated CI and Kustomize staging/production overlays.</p>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <h3>Finance Microservices (.NET 8, C#)</h3>
+        <span class="period">Sep 2026</span>
+      </div>
+      <p>.NET 8 services behind a YARP gateway; releases gated by NuGet vulnerability, migration drift, and Trivy scans, with tracing and DR runbooks.</p>
+    </div>
+
     <h2>Knowledge</h2>
     <div class="skills">
-      <p><strong>Frontend:</strong> Vue.js, React, Vue 3, JavaScript (ES6+), TypeScript, HTML5, CSS3, Pinia, Vuetify 3, Bootstrap, CoreUI.</p>
-      <p><strong>Backend:</strong> Laravel 12, Node.js, PHP 8.2, PHP 7.x/8.x, C# (.NET basic), RESTful API, JWT, Spatie Permission. Willing to switch to another language (Go, Java, Python, etc.).</p>
-      <p><strong>Database:</strong> MySQL 8.0, PostgreSQL, Redis, relational design, JSON columns, polymorphic relationships.</p>
-      <p><strong>Cloud &amp; DevOps:</strong> AWS, Docker, Kubernetes, ArgoCD, Jenkins, GitHub/GitLab CI/CD, Nginx, Prometheus, Grafana, Loki, CloudWatch, API Gateway, Lambda, S3, RDS, SNS, SQS.</p>
-      <p><strong>Software Engineering:</strong> OOP, System Design, Clean Code, SOLID, Design Patterns, Microservices, Message Queue, RBAC, WebSocket.</p>
-      <p><strong>AI &amp; Productivity:</strong> GitHub Copilot, ChatGPT, Cursor for brainstorming, code review, debugging, and development efficiency.</p>
+      <p><strong>Backend:</strong> Node.js (NestJS), PHP, Go, C# (.NET), Python, RESTful API design, OAuth2/SSO, JWT, RBAC, queues and background jobs, WebSocket. Willing to switch to another language (Java, Rust, etc.).</p>
+      <p><strong>Database:</strong> MySQL 8.0, PostgreSQL, Redis, schema design, indexing, query optimization.</p>
+      <p><strong>SRE &amp; Observability:</strong> Prometheus, Grafana, Loki, Alertmanager, OpenTelemetry, Jaeger, Sentry, health checks and probes, autoscaling (HPA), PDBs, backup and restore, load testing (k6), runbooks.</p>
+      <p><strong>Cloud &amp; Platform:</strong> AWS (EC2, S3, CloudFront, RDS, Lambda, API Gateway, SNS, SQS, CloudWatch), Kubernetes, Docker, ArgoCD (GitOps), HashiCorp Vault, Jenkins, GitLab CI, GitHub Actions, Nginx, Linux.</p>
+      <p><strong>Security:</strong> OWASP remediation (IDOR, XSS, SQL injection, rate limiting), SonarQube, Trivy, govulncheck, gitleaks, Kubernetes NetworkPolicy and securityContext.</p>
+      <p><strong>Software Engineering:</strong> OOP, System Design, Clean Code, SOLID, Design Patterns, Microservices, Message Queues, Event-driven design.</p>
+      <p><strong>Frontend:</strong> Vue 3, React, TypeScript, Pinia, Vuetify.</p>
+      <p><strong>AI &amp; Productivity:</strong> Claude, ChatGPT, Cursor for brainstorming, code review, debugging, and development efficiency.</p>
       <p><strong>Tools &amp; Collaboration:</strong> Jira, Confluence, Slack, Backlog, Sentry.</p>
     </div>
 
@@ -286,7 +334,7 @@
 
     <h2>Community Activities</h2>
     <p>
-      Laravel Viet Nam, AWS Study Group, Google Developer Group Hanoi - Member
+      AWS Study Group, Google Developer Group Hanoi, Laravel Viet Nam - Member
       (2022 - Now). Attend events to learn new skills and share knowledge about AWS
       SAA-C03 and AWS Certified Developer exam preparation.
     </p>
