@@ -17,11 +17,6 @@
             <v-list-tile-title>SERVICES</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile active-class="green--text" to="/portfolio">
-          <v-list-tile-content>
-            <v-list-tile-title>PORTFOLIO</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
         <v-list-tile active-class="green--text" to="/blog">
           <v-list-tile-content>
             <v-list-tile-title>BLOG</v-list-tile-title>
@@ -49,7 +44,6 @@
         <v-btn flat to="/" active-class="green--text headline">Home</v-btn>
         <v-btn flat to="/resume" active-class="green--text headline">Resume</v-btn>
         <v-btn flat to="/services" active-class="green--text headline">Services</v-btn>
-        <v-btn flat to="/portfolio" active-class="green--text headline">Portfolio</v-btn>
         <v-btn flat to="/blog" active-class="green--text headline">Blog</v-btn>
         <v-btn flat to="/contact" active-class="green--text headline">Contact</v-btn>
         <v-btn @click="changeTheme" depressed small icon>
