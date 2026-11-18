@@ -130,12 +130,14 @@
       </div>
       <p class="sub">
         Partner Portal V2 - Enterprise Channel Partner Management platform for FPT
-        Cloud International's global distribution network.
+        Cloud International's global distribution network; Microsoft 365 CSP Portal -
+        microservices platform for Microsoft 365 CSP resale and operations.
       </p>
       <ul>
         <li>Rated A in the Q1 2026 performance review.</li>
         <li>Owned the backend of Partner Portal V2 end to end: REST APIs, data model, and multi-stage approval workflows for partner onboarding, deal registration, marketing fund (MDF) claims, and revenue dashboards, with queue workers, schedulers, and a WebSocket server for async and real-time work.</li>
         <li>Integrated FPT ID SSO (OAuth2), LMS webhooks with user sync, S3, and CRM/Vtiger; built API-key auth, RBAC, and audit logging for partner access, and led remediation of three external penetration-test rounds (private S3 with presigned URLs, IDOR checks, rate limiting, upload validation).</li>
+        <li>Building the Microsoft 365 CSP Portal on NestJS microservices: API gateway in front of 4 domain services with database-per-service on PostgreSQL, event-driven messaging via transactional outbox to RabbitMQ (publisher confirms, retry with backoff, DLQ), BullMQ workers, RS256/JWKS service-to-service auth, and Microsoft Partner Center integration.</li>
         <li>Shipped staging and production releases through the SRE team's ArgoCD GitOps repository (config maps, Vault-backed secrets, ingress including WebSocket routing), built the non-root container images with health probes, and wrote the SRE handover runbook (deploy, scaling, troubleshooting, go-live checklist).</li>
         <li>Set up Sentry error tracking and cron monitoring for scheduled jobs, routed application logs to the central Grafana stack, resolved SonarQube findings, and mentored engineers.</li>
       </ul>
@@ -199,6 +201,20 @@
     </div>
 
     <h2>Selected Projects</h2>
+    <div class="item">
+      <div class="item-head">
+        <h3>Microsoft 365 CSP Portal</h3>
+        <span class="period">Sep 2026 - Present</span>
+      </div>
+      <p>
+        Role: Senior Backend &amp; SRE Engineer. NestJS microservices portal for Microsoft 365 CSP resale:
+        API gateway (JWT, rate limiting, API keys) in front of 4 domain services with
+        database-per-service on PostgreSQL. Event-driven via transactional outbox to
+        RabbitMQ (publisher confirms, retry with backoff, DLQ), BullMQ workers and a ticket
+        state machine, RS256/JWKS service-to-service auth, Microsoft Partner Center
+        integration with webhooks.
+      </p>
+    </div>
     <div class="item">
       <div class="item-head">
         <h3>Partner Portal V2</h3>
@@ -319,31 +335,10 @@
       </div>
       <p>Live learning platform with GitOps self-heal, HPA autoscaling, backups, k6 load tests, and a sandboxed code-execution service.</p>
     </div>
-    <div class="item">
-      <div class="item-head">
-        <h3>WebPhim - Video Streaming Platform (Go)</h3>
-        <span class="period">Sep 2026 - Present</span>
-      </div>
-      <p>Hexagonal Go backend (API, key service, worker) with encrypted HLS streaming; CI with lint, race tests, and gitleaks, and change-based CD to Kubernetes.</p>
-    </div>
-    <div class="item">
-      <div class="item-head">
-        <h3>Go E-commerce Microservices</h3>
-        <span class="period">Sep 2026</span>
-      </div>
-      <p>Five Go services with rate limiting and RBAC auditing; govulncheck-gated CI and Kustomize staging/production overlays.</p>
-    </div>
-    <div class="item">
-      <div class="item-head">
-        <h3>Finance Microservices (.NET 8, C#)</h3>
-        <span class="period">Sep 2026</span>
-      </div>
-      <p>.NET 8 services behind a YARP gateway; releases gated by NuGet vulnerability, migration drift, and Trivy scans, with tracing and DR runbooks.</p>
-    </div>
-
     <h2>Knowledge</h2>
     <div class="skills">
       <p><strong>Backend:</strong> Node.js (NestJS), PHP, Go, C# (.NET), Python, RESTful API design, OAuth2/SSO, JWT, RBAC, queues and background jobs, WebSocket. Willing to switch to another language (Java, Rust, etc.).</p>
+      <p><strong>Microservices &amp; Distributed Systems:</strong> microservice architecture, API gateway, database-per-service, RabbitMQ (exchanges, routing, DLQ, retry/backoff, publisher confirms), transactional outbox, idempotent consumers, event-driven design, BullMQ, service-to-service auth (JWKS).</p>
       <p><strong>Database:</strong> MySQL 8.0, PostgreSQL, Redis, schema design, indexing, query optimization.</p>
       <p><strong>SRE &amp; Observability:</strong> Prometheus, Grafana, Loki, Alertmanager, OpenTelemetry, Jaeger, Sentry, health checks and probes, autoscaling (HPA), PDBs, backup and restore, load testing (k6), runbooks.</p>
       <p><strong>Cloud &amp; Platform:</strong> AWS (EC2, S3, CloudFront, RDS, Lambda, API Gateway, SNS, SQS, CloudWatch), Kubernetes, Docker, ArgoCD (GitOps), HashiCorp Vault, Jenkins, GitLab CI, GitHub Actions, Nginx, Linux.</p>
