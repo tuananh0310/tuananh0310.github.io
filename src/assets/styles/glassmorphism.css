@@ -241,11 +241,18 @@ canvas {
 }
 
 /* Glass Navigation Bar */
-.glass-nav {
+/* Glass Sticky Navbar Wrapper */
+.the-navbar-root {
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  z-index: var(--z-sticky, 1000);
+}
+
+.glass-nav {
+  position: relative;
   width: 100%;
   height: var(--nav-height, 68px);
   background: var(--bg-surface, rgba(17, 24, 39, 0.82));
@@ -264,6 +271,11 @@ canvas {
   -webkit-backdrop-filter: var(--glass-blur, blur(20px)) !important;
   border-left: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08)) !important;
   box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Ensure backdrop overlay covers full viewport above navbar and below drawer */
+.v-overlay {
+  z-index: 1050 !important;
 }
 
 /* ==========================================================================

@@ -1,120 +1,122 @@
 <template>
-  <header
-    class="glass-nav"
-    :class="{ 'is-scrolled': isScrolled }"
-    role="banner"
-  >
-    <div class="glass-container navbar-inner">
-      <!-- 1. Brand Monogram & Title -->
-      <a
-        href="#hero"
-        class="brand-link"
-        aria-label="Le Xuan Tuan Anh Portfolio - Back to top"
-        @click.prevent="scrollTo('#hero')"
-      >
-        <div class="brand-monogram" aria-hidden="true">
-          <span class="monogram-bracket">[</span>
-          <span class="monogram-text">LA</span>
-          <span class="monogram-bracket">]</span>
-        </div>
-        <div class="brand-info">
-          <span class="brand-title">Le Xuan Tuan Anh</span>
-          <span class="brand-subtitle hidden-xs-only">Backend &amp; Platform</span>
-        </div>
-      </a>
-
-      <!-- 2. Live Status Beacon (Desktop/Tablet) -->
-      <div class="navbar-beacon-wrap hidden-sm-and-down">
-        <span class="status-beacon-pill" role="status" aria-live="polite">
-          <span class="status-beacon-dot" aria-hidden="true" />
-          <span class="beacon-label">Open to Senior Roles</span>
-        </span>
-      </div>
-
-      <!-- 3. Desktop Navigation Links -->
-      <nav class="navbar-links hidden-sm-and-down" aria-label="Section navigation">
+  <div class="the-navbar-root">
+    <header
+      class="glass-nav"
+      :class="{ 'is-scrolled': isScrolled }"
+      role="banner"
+    >
+      <div class="glass-container navbar-inner">
+        <!-- 1. Brand Monogram & Title -->
         <a
-          v-for="link in desktopNavLinks"
-          :key="link.id"
-          :href="link.target"
-          class="navbar-link"
-          :class="{ 'is-active': activeSection === link.id }"
-          @click.prevent="scrollTo(link.target)"
+          href="#hero"
+          class="brand-link"
+          aria-label="Le Xuan Tuan Anh Portfolio - Back to top"
+          @click.prevent="scrollTo('#hero')"
         >
-          {{ link.label }}
-        </a>
-      </nav>
-
-      <!-- 4. Quick Actions: CV Download, Theme Toggle, Mobile Hamburger -->
-      <div class="navbar-actions">
-        <!-- CV Download Button -->
-        <a
-          :href="resumePdfUrl"
-          download="Le-Xuan-Tuan-Anh-CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-glass-outline btn-download-cv hidden-xs-only"
-          aria-label="Download CV (PDF)"
-        >
-          <svg
-            class="btn-icon"
-            viewBox="0 0 24 24"
-            width="15"
-            height="15"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-            <polyline points="7 10 12 15 17 10" />
-            <line x1="12" y1="15" x2="12" y2="3" />
-          </svg>
-          <span>Download CV</span>
+          <div class="brand-monogram" aria-hidden="true">
+            <span class="monogram-bracket">[</span>
+            <span class="monogram-text">LA</span>
+            <span class="monogram-bracket">]</span>
+          </div>
+          <div class="brand-info">
+            <span class="brand-title">Le Xuan Tuan Anh</span>
+            <span class="brand-subtitle hidden-xs-only">Backend &amp; Platform</span>
+          </div>
         </a>
 
-        <!-- Animated Theme Toggle -->
-        <button
-          type="button"
-          class="btn-theme-toggle"
-          :aria-label="currentDark ? 'Switch to Light Theme' : 'Switch to Dark Theme'"
-          :title="currentDark ? 'Switch to Light Theme' : 'Switch to Dark Theme'"
-          @click="toggleTheme"
-        >
-          <transition name="theme-rotate" mode="out-in">
-            <i
-              v-if="currentDark"
-              key="sun"
-              class="fas fa-sun theme-icon sun-icon"
-              aria-hidden="true"
-            />
-            <i
-              v-else
-              key="moon"
-              class="fas fa-moon theme-icon moon-icon"
-              aria-hidden="true"
-            />
-          </transition>
-        </button>
-
-        <!-- Mobile Hamburger Button -->
-        <button
-          type="button"
-          class="btn-hamburger hidden-md-and-up"
-          aria-label="Toggle navigation drawer"
-          :aria-expanded="drawer ? 'true' : 'false'"
-          @click="drawer = !drawer"
-        >
-          <span class="hamburger-box">
-            <span class="hamburger-inner" :class="{ 'is-active': drawer }" />
+        <!-- 2. Live Status Beacon (Desktop/Tablet) -->
+        <div class="navbar-beacon-wrap hidden-sm-and-down">
+          <span class="status-beacon-pill" role="status" aria-live="polite">
+            <span class="status-beacon-dot" aria-hidden="true" />
+            <span class="beacon-label">Open to Senior Roles</span>
           </span>
-        </button>
-      </div>
-    </div>
+        </div>
 
-    <!-- 5. Mobile Slide-Over Drawer Sheet -->
+        <!-- 3. Desktop Navigation Links -->
+        <nav class="navbar-links hidden-sm-and-down" aria-label="Section navigation">
+          <a
+            v-for="link in desktopNavLinks"
+            :key="link.id"
+            :href="link.target"
+            class="navbar-link"
+            :class="{ 'is-active': activeSection === link.id }"
+            @click.prevent="scrollTo(link.target)"
+          >
+            {{ link.label }}
+          </a>
+        </nav>
+
+        <!-- 4. Quick Actions: CV Download, Theme Toggle, Mobile Hamburger -->
+        <div class="navbar-actions">
+          <!-- CV Download Button -->
+          <a
+            :href="resumePdfUrl"
+            download="Le-Xuan-Tuan-Anh-CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-glass-outline btn-download-cv hidden-xs-only"
+            aria-label="Download CV (PDF)"
+          >
+            <svg
+              class="btn-icon"
+              viewBox="0 0 24 24"
+              width="15"
+              height="15"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span>Download CV</span>
+          </a>
+
+          <!-- Animated Theme Toggle -->
+          <button
+            type="button"
+            class="btn-theme-toggle"
+            :aria-label="currentDark ? 'Switch to Light Theme' : 'Switch to Dark Theme'"
+            :title="currentDark ? 'Switch to Light Theme' : 'Switch to Dark Theme'"
+            @click="toggleTheme"
+          >
+            <transition name="theme-rotate" mode="out-in">
+              <i
+                v-if="currentDark"
+                key="sun"
+                class="fas fa-sun theme-icon sun-icon"
+                aria-hidden="true"
+              />
+              <i
+                v-else
+                key="moon"
+                class="fas fa-moon theme-icon moon-icon"
+                aria-hidden="true"
+              />
+            </transition>
+          </button>
+
+          <!-- Mobile Hamburger Button -->
+          <button
+            type="button"
+            class="btn-hamburger hidden-md-and-up"
+            aria-label="Toggle navigation drawer"
+            :aria-expanded="drawer ? 'true' : 'false'"
+            @click="drawer = !drawer"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner" :class="{ 'is-active': drawer }" />
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 5. Mobile Slide-Over Drawer Sheet (Outside <header> to avoid backdrop-filter containing block trap) -->
     <v-navigation-drawer
       v-model="drawer"
       fixed
@@ -219,7 +221,7 @@
         </div>
       </div>
     </v-navigation-drawer>
-  </header>
+  </div>
 </template>
 
 <script>
@@ -617,6 +619,7 @@ export default {
 .drawer-tile-title {
   font-size: 0.9rem;
   font-weight: 500;
+  color: var(--text-primary) !important;
 }
 
 .drawer-cv-btn {
@@ -659,8 +662,31 @@ export default {
   border-color: var(--accent-primary, #00E676);
 }
 
+.the-navbar-root {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: var(--z-sticky, 1000);
+}
+
 .mobile-nav-drawer {
+  position: fixed !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  height: 100% !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  max-height: 100vh !important;
+  max-height: 100dvh !important;
   max-width: calc(100vw - 36px) !important;
+  z-index: var(--z-drawer, 1100) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
 }
 
 .mobile-nav-drawer .v-list__tile,
