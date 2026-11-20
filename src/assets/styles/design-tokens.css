@@ -39,7 +39,7 @@
   --ls-widest: 0.1em;
 
   /* Fluid Typography Scale (using clamp) */
-  --fs-display: clamp(2.5rem, 5vw + 1rem, 4.25rem);      /* 40px - 68px (Hero Headline) */
+  --fs-display: clamp(1.85rem, 5vw + 1rem, 4.25rem);      /* ~30px - 68px (Hero Headline) */
   --fs-h1: clamp(2rem, 3.5vw + 0.5rem, 3rem);            /* 32px - 48px (Section Titles) */
   --fs-h2: clamp(1.5rem, 2.5vw + 0.5rem, 2.25rem);       /* 24px - 36px (Section Subtitles) */
   --fs-h3: clamp(1.25rem, 1.5vw + 0.5rem, 1.625rem);     /* 20px - 26px (Card Titles) */

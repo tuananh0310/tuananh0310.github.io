@@ -276,4 +276,16 @@ export default {
 .h-full {
   height: 100%;
 }
+
+@media (max-width: 768px) {
+  .bento-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

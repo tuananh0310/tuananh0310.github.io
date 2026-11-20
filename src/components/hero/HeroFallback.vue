@@ -305,7 +305,21 @@ export default {
   100% { transform: translateY(-8px) rotate(1.5deg); }
 }
 
-/* Narrow Viewport Safety (<=480px and <=320px) */
+/* Narrow Viewport Safety (<=768px, <=480px, and <=320px) */
+@media (max-width: 768px) {
+  .badge-k8s {
+    right: 0%;
+  }
+
+  .badge-aws {
+    left: 0%;
+  }
+
+  .badge-go {
+    right: 0%;
+  }
+}
+
 @media (max-width: 480px) {
   .hero-fallback-container {
     max-width: 100%;
@@ -366,7 +380,11 @@ export default {
 /* Reduced Motion Override */
 .reduced-motion .cyber-ring-outer,
 .reduced-motion .techno-ring-middle,
-.reduced-motion .tech-badge,
+.reduced-motion .tech-badge {
+  animation: none !important;
+  transform: none !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .cyber-ring-outer,
   .techno-ring-middle,

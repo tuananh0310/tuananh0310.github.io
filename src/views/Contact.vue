@@ -8,8 +8,8 @@
         </h2>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fas fa-map-marker-alt</v-icon>
-          <span>No. 113, Yen Hoa Ward, Cau Giay District, </span>
-          <span class="green--text">Hanoi</span>
+          <span>No. 42, Lane 230, Me Tri Thuong Street, Me Tri Ward, </span>
+          <span class="green--text">Nam Tu Liem District, Hanoi</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fas fa-envelope</v-icon>
@@ -34,7 +34,12 @@
           <span class="green--text">Form</span>
         </h2>
 
-        <form method="POST" action="https://formspree.io/f/xanwjdrr">
+        <form
+          ref="contactForm"
+          method="POST"
+          action="https://formspree.io/f/xanwjdrr"
+          @submit.prevent="submit"
+        >
           <v-text-field
             name="name"
             color="green"
@@ -71,7 +76,7 @@
             type="submit"
             color="green"
             class="white--text"
-            :disabled=" (body.length<=20)"
+            :disabled="$v.$invalid || body.length < 20"
           >SEND MESSAGE</v-btn>
           <v-btn @click="clear">clear</v-btn>
         </form>
@@ -117,8 +122,16 @@ export default {
     }
   },
   methods: {
-    submit () {
+    submit (e) {
       this.$v.$touch()
+      if (this.$v.$invalid) {
+        if (e && e.preventDefault) e.preventDefault()
+        return
+      }
+      const form = this.$refs.contactForm || (e && e.target)
+      if (form && form.submit) {
+        form.submit()
+      }
     },
     clear () {
       this.$v.$reset()

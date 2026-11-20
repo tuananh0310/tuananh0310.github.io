@@ -422,6 +422,23 @@ canvas {
   transform: translateY(0);
 }
 
+/* Disabled States for Primary and Glass Outline Buttons */
+.btn-primary-gradient:disabled,
+.btn-primary-gradient[disabled],
+.v-btn.btn-primary-gradient:disabled,
+.v-btn.btn-primary-gradient[disabled],
+.btn-glass-outline:disabled,
+.btn-glass-outline[disabled],
+.v-btn.btn-glass-outline:disabled,
+.v-btn.btn-glass-outline[disabled] {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  pointer-events: none !important;
+}
+
 /* ==========================================================================
    6. BADGES, CHIPS & STATUS BEACONS
    ========================================================================== */
@@ -606,3 +623,16 @@ canvas {
   .mb-10 { margin-bottom: 2rem !important; }
   .mb-12 { margin-bottom: 2.25rem !important; }
 }
+
+/* Mobile Touch Targets (WCAG >= 44x44px) */
+@media (max-width: 768px) {
+  .btn-sm,
+  .btn-back-to-top,
+  .filter-tab-btn {
+    min-height: 44px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+

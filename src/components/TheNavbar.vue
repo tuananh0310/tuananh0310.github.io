@@ -289,7 +289,6 @@ export default {
     toggleTheme () {
       const nextTheme = !this.currentDark
       this.$emit('toggle-theme', nextTheme)
-      this.$emit('changeTheme', nextTheme)
     },
     scrollTo (target) {
       if (this.drawer) {
@@ -316,6 +315,10 @@ export default {
     handleScroll () {
       if (typeof window === 'undefined') return
       this.isScrolled = window.pageYOffset > 20
+      if (window.innerHeight + window.pageYOffset >= (document.documentElement.scrollHeight || document.body.scrollHeight) - 50) {
+        this.activeSection = 'contact'
+        return
+      }
       const scrollPos = window.pageYOffset + this.headerOffset + 40
       const sections = ['contact', 'skills', 'projects', 'experience', 'about', 'hero']
       for (let i = 0; i < sections.length; i++) {
@@ -337,6 +340,27 @@ export default {
 </script>
 
 <style scoped>
+.glass-nav.is-scrolled {
+  background: var(--bg-surface-elevated, rgba(17, 24, 39, 0.92)) !important;
+  box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.35) !important;
+  border-bottom-color: var(--border-default, rgba(255, 255, 255, 0.12)) !important;
+}
+
+.theme-rotate-enter-active,
+.theme-rotate-leave-active {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.theme-rotate-enter {
+  transform: rotate(-90deg) scale(0.6);
+  opacity: 0;
+}
+
+.theme-rotate-leave-to {
+  transform: rotate(90deg) scale(0.6);
+  opacity: 0;
+}
+
 .navbar-inner {
   display: flex;
   align-items: center;
@@ -451,8 +475,10 @@ export default {
 }
 
 .btn-theme-toggle {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -479,8 +505,10 @@ export default {
 }
 
 .btn-hamburger {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -563,7 +591,14 @@ export default {
   color: var(--text-secondary);
   font-size: 1.15rem;
   cursor: pointer;
-  padding: 0.25rem 0.5rem;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .drawer-close-btn:hover {
@@ -604,8 +639,10 @@ export default {
 }
 
 .drawer-social-btn {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -622,10 +659,62 @@ export default {
   border-color: var(--accent-primary, #00E676);
 }
 
+.mobile-nav-drawer {
+  max-width: calc(100vw - 36px) !important;
+}
+
+.mobile-nav-drawer .v-list__tile,
+.mobile-nav-drawer ::v-deep .v-list__tile {
+  min-height: 44px !important;
+}
+
+.drawer-actions {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom)) !important;
+}
+
+@media (max-width: 1120px) {
+  .navbar-beacon-wrap {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .brand-subtitle {
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar-inner {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-inner {
+    gap: 0.5rem;
+  }
+  .navbar-actions {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar-inner {
+    gap: 0.35rem;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+  }
+  .brand-title {
+    max-width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.85rem;
+  }
+  .brand-link {
+    gap: 0.4rem;
   }
 }
 </style>

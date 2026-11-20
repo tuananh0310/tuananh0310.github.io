@@ -24,7 +24,7 @@
             </div>
             <div class="contact-item-content">
               <div class="contact-label text-muted">Email Address</div>
-              <div class="contact-value font-mono">{{ contact.email }}</div>
+              <a :href="'mailto:' + contact.email" class="contact-value font-mono">{{ contact.email }}</a>
             </div>
             <button
               type="button"
@@ -499,6 +499,46 @@ export default {
   padding: 0.4rem 1rem !important;
   font-size: var(--fs-xs, 0.75rem) !important;
   min-height: 36px;
+}
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-rotate 0.75s linear infinite;
+  vertical-align: middle;
+}
+@keyframes spinner-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media (max-width: 768px) {
+  .btn-copy,
+  .btn-sm,
+  .form-actions button {
+    min-height: 44px !important;
+  }
+}
+@media (max-width: 600px) {
+  .contact-item-card {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  .form-panel {
+    padding: 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .form-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-actions button,
+  .submit-btn {
+    width: 100%;
+  }
 }
 .text-accent-gradient {
   background: var(--accent-gradient, linear-gradient(135deg, #00E676 0%, #38BDF8 100%));

@@ -38,19 +38,23 @@ export default {
   },
 
   created () {
-    window.storyblok.init({
-      accessToken: token
-    })
-    window.storyblok.on('change', () => {
-      this.getStory('home', 'draft')
-    })
-    window.storyblok.pingEditor(() => {
-      if (window.storyblok.isInEditor()) {
+    if (typeof window !== 'undefined' && window.storyblok) {
+      window.storyblok.init({
+        accessToken: token
+      })
+      window.storyblok.on('change', () => {
         this.getStory('home', 'draft')
-      } else {
-        this.getStory('home', 'published')
-      }
-    })
+      })
+      window.storyblok.pingEditor(() => {
+        if (window.storyblok.isInEditor()) {
+          this.getStory('home', 'draft')
+        } else {
+          this.getStory('home', 'published')
+        }
+      })
+    } else {
+      this.getStory('home', 'published')
+    }
   },
 
   methods: {

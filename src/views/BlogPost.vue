@@ -1,21 +1,35 @@
 <template>
-  <v-layout column justify-center class="mt-4 pt-2" v-editable="result.blok">
-    <h1 class="text-xs-center mb-4 pb-2">{{result.title}}</h1>
-    <span>{{result.date.getDate()}}.{{result.date.getMonth()+1}}.{{result.date.getFullYear()}}</span>
-    <v-img :src="result.image" aspect-ratio="2.75" height="330" contain :alt="result.title"></v-img>
-    <v-layout column justify-center align-center class="mt-4 pt-2">
-      <p v-html="body"></p>
+  <v-container class="safe-layout">
+    <v-layout
+      v-if="result && result.date"
+      column
+      justify-center
+      class="mt-4 pt-2"
+      v-editable="result.blok"
+    >
+      <h1 class="text-xs-center mb-4 pb-2">{{ result.title }}</h1>
+      <span>{{ result.date.getDate() }}.{{ result.date.getMonth() + 1 }}.{{ result.date.getFullYear() }}</span>
+      <v-img :src="result.image" aspect-ratio="2.75" height="330" contain :alt="result.title" />
+      <v-layout column justify-center align-center class="mt-4 pt-2">
+        <p v-html="body" />
+      </v-layout>
+      <br>
+      <br>
+      <v-btn large flat to="/blog" class="green--text">
+        <v-icon>arrow_back</v-icon>Back to Blog
+      </v-btn>
     </v-layout>
-    <br>
-    <br>
-    <v-btn large flat to="/blog" class="green--text">
-      <v-icon>arrow_back</v-icon>Back to Blog
-    </v-btn>
-  </v-layout>
+    <div v-else class="text-xs-center py-5">
+      <p class="subheading text-muted">Loading article...</p>
+      <v-btn flat to="/blog" class="green--text mt-3">
+        <v-icon>arrow_back</v-icon>Back to Blog
+      </v-btn>
+    </div>
+  </v-container>
 </template>
 
 <script>
-import marked from 'marked'
+import { marked } from 'marked'
 import StoryblokClient from 'storyblok-js-client'
 const token = 'iyPj3vEKmPladyz3zeqKuwtt'
 let storyapi = new StoryblokClient({
@@ -31,33 +45,35 @@ export default {
   },
   metaInfo () {
     return {
-      title: this.result.title,
+      title: (this.result && this.result.title) || 'Blog Post',
       titleTemplate: '%s ← Le Xuan Tuan Anh',
-      meta: [
-
-      ]
+      meta: []
     }
   },
   computed: {
     body () {
-      return marked(this.result.content)
+      return this.result && this.result.content ? marked(this.result.content) : ''
     }
   },
 
   created () {
-    window.storyblok.init({
-      accessToken: token
-    })
-    window.storyblok.on('change', () => {
-      this.getStory('home', 'draft')
-    })
-    window.storyblok.pingEditor(() => {
-      if (window.storyblok.isInEditor()) {
+    if (typeof window !== 'undefined' && window.storyblok) {
+      window.storyblok.init({
+        accessToken: token
+      })
+      window.storyblok.on('change', () => {
         this.getStory('home', 'draft')
-      } else {
-        this.getStory('home', 'published')
-      }
-    })
+      })
+      window.storyblok.pingEditor(() => {
+        if (window.storyblok.isInEditor()) {
+          this.getStory('home', 'draft')
+        } else {
+          this.getStory('home', 'published')
+        }
+      })
+    } else {
+      this.getStory('home', 'published')
+    }
   },
 
   methods: {
