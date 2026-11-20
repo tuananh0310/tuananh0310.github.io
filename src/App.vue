@@ -5,7 +5,6 @@
       :is-dark="goDark"
       :go-dark="goDark"
       @toggle-theme="toggleTheme"
-      @changeTheme="updateTheme"
     />
 
     <!-- 2. Main Content Wrapper (Without constricting v-container) -->

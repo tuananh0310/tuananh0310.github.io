@@ -1,7 +1,7 @@
 <template>
   <div class="home-spa-view">
     <!-- Section 1: Hero with 3D WebGL / Fallback -->
-    <HeroSection id="hero" />
+    <HeroSection id="hero" :is-dark="isDark" />
 
     <!-- Section 2: About & Engineering Philosophy Bento -->
     <AboutSection id="about" />
@@ -30,6 +30,12 @@ import ContactSection from '@/components/contact/ContactSection.vue'
 
 export default {
   name: 'Home',
+  props: {
+    isDark: {
+      type: Boolean,
+      default: true
+    }
+  },
   metaInfo: {
     title: 'Home',
     titleTemplate: '%s ← Le Xuan Tuan Anh',

@@ -215,8 +215,10 @@ export default {
   gap: 0.75rem;
 }
 .footer-social-btn {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -241,6 +243,11 @@ export default {
   font-size: var(--fs-xs, 0.75rem);
   font-weight: 600;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .btn-back-to-top {
+    min-height: 44px !important;
+  }
 }
 .footer-divider {
   border-color: var(--border-subtle, rgba(255, 255, 255, 0.08)) !important;

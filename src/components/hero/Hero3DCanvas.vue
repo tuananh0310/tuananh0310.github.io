@@ -22,6 +22,10 @@ export default {
     reducedMotion: {
       type: Boolean,
       default: false
+    },
+    isDark: {
+      type: Boolean,
+      default: true
     }
   },
   data () {
@@ -43,6 +47,11 @@ export default {
         if (this.clock) this.clock.start()
         this.animate()
       }
+    },
+    isDark (val) {
+      if (this.scene && this.scene.fog) {
+        this.scene.fog.color.setHex(val ? 0x0B0F19 : 0xF8FAFC)
+      }
     }
   },
   mounted () {
@@ -62,7 +71,7 @@ export default {
 
       // 1. Initialize Scene, Camera, and Fog
       this.scene = new THREE.Scene()
-      this.scene.fog = new THREE.FogExp2(0x0B0F19, 0.035)
+      this.scene.fog = new THREE.FogExp2(this.isDark ? 0x0B0F19 : 0xF8FAFC, 0.035)
 
       const initialWidth = container.clientWidth || 400
       const initialHeight = container.clientHeight || 400
@@ -483,6 +492,10 @@ export default {
       this.drag.startX = touch.clientX
       this.drag.startY = touch.clientY
 
+      if (Math.abs(deltaY) > Math.abs(deltaX) * 1.5) {
+        return
+      }
+
       this.drag.velocityX = deltaX * this.drag.sensitivity
       this.drag.velocityY = deltaY * this.drag.sensitivity
 
@@ -826,6 +839,16 @@ export default {
     transparent 45%,
     rgba(11, 15, 25, 0.40) 80%,
     var(--bg-canvas, #0B0F19) 100%
+  );
+}
+
+.theme--light .hero-3d-vignette,
+[data-theme="light"] .hero-3d-vignette {
+  background: radial-gradient(
+    circle at center,
+    transparent 50%,
+    rgba(248, 250, 252, 0.45) 80%,
+    var(--bg-canvas, #F8FAFC) 100%
   );
 }
 

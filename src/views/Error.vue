@@ -1,21 +1,23 @@
 <template>
-  <v-layout row justify-center align-center wrap class="mt-4 pt-2">
-    <div class="circles">
-      <p>
-        404
+  <div class="error-view-wrapper">
+    <v-layout row justify-center align-center wrap class="mt-4 pt-2">
+      <div class="circles">
+        <p>
+          404
+          <br>
+          <small>PAGE NOT FOUND</small>
+        </p>
+        <span class="circle big"></span>
+        <span class="circle med"></span>
+        <span class="circle small"></span>
         <br>
-        <small>PAGE NOT FOUND</small>
-      </p>
-      <span class="circle big"></span>
-      <span class="circle med"></span>
-      <span class="circle small"></span>
-      <br>
-      <br>
-      <v-btn large to="/" class="green--text">
-        <v-icon>arrow_back</v-icon>GO HOME
-      </v-btn>
-    </div>
-  </v-layout>
+        <br>
+        <v-btn large to="/" class="green--text">
+          <v-icon>arrow_back</v-icon>GO HOME
+        </v-btn>
+      </div>
+    </v-layout>
+  </div>
 </template>
 
 <script>
@@ -23,6 +25,13 @@ export default {}
 </script>
 
 <style scoped>
+.error-view-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+}
+
 .circles:after {
   content: "";
   display: inline-block;
@@ -39,10 +48,12 @@ export default {}
 .circles {
   text-align: center;
   position: relative;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .circles p {
-  font-size: 240px;
+  font-size: clamp(4rem, 20vw, 12rem);
   color: green;
   padding-top: 90px;
   position: relative;
@@ -51,7 +62,7 @@ export default {}
 }
 
 .circles p small {
-  font-size: 40px;
+  font-size: clamp(1.25rem, 4vw, 2.5rem);
   line-height: 100%;
   vertical-align: top;
 }
@@ -59,6 +70,8 @@ export default {}
 .circles .circle.small {
   width: 140px;
   height: 140px;
+  max-width: 50vw;
+  max-height: 50vw;
   border-radius: 50%;
   background: rgb(200, 223, 166);
   position: absolute;
@@ -74,6 +87,8 @@ export default {}
 .circles .circle.med {
   width: 200px;
   height: 200px;
+  max-width: 80vw;
+  max-height: 80vw;
   border-radius: 50%;
   background: rgb(141, 214, 163);
   position: absolute;
@@ -89,6 +104,8 @@ export default {}
 .circles .circle.big {
   width: 400px;
   height: 400px;
+  max-width: 80vw;
+  max-height: 80vw;
   border-radius: 50%;
   background: rgb(173, 211, 129);
   position: absolute;

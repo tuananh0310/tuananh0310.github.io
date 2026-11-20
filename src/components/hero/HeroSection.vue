@@ -158,6 +158,7 @@
           <hero-3-d-canvas
             v-if="webglAvailable && !webglFailed"
             :reduced-motion="prefersReducedMotion"
+            :is-dark="isDark"
             @webgl-failed="handleWebGLFailed"
           />
           <hero-fallback
@@ -180,6 +181,12 @@ import HeroFallback from './HeroFallback.vue'
 
 export default {
   name: 'HeroSection',
+  props: {
+    isDark: {
+      type: Boolean,
+      default: true
+    }
+  },
   components: {
     HeroFallback,
     // Dynamically lazy-load 3D Canvas only if WebGL is supported
@@ -307,6 +314,7 @@ export default {
 .hero-section {
   position: relative;
   min-height: calc(100vh - var(--header-height, 68px));
+  min-height: calc(100dvh - var(--header-height, 68px));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -458,8 +466,10 @@ export default {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: var(--radius-full, 9999px);
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.1));

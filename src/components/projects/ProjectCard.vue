@@ -121,6 +121,11 @@ export default {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .btn-sm {
+    min-height: 44px !important;
+  }
+}
 .text-accent-gradient {
   background: var(--accent-gradient, linear-gradient(135deg, #00E676 0%, #38BDF8 100%));
   -webkit-background-clip: text;

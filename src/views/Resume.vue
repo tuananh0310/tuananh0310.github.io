@@ -1,5 +1,6 @@
 <template>
-  <v-layout row justify-center align-center wrap class="mt-4 pt-2">
+  <v-container class="safe-layout">
+    <v-layout row justify-center align-center wrap class="mt-4 pt-2">
     <v-flex xs12 sm12 md5 lg6 xl6 class="mt-4 pt-4">
       <h2 class="mb-4 pl-4 pt-2">Education</h2>
       <v-card-text class="py-0">
@@ -145,49 +146,50 @@
         </v-timeline>
       </v-card-text>
     </v-flex>
-    <v-layout row justify-center align-center wrap class="mt-4 pt-2">
-      <v-flex xs12 sm12 md8 lg8 xl8 class="mx-2 pt-4">
-        <h2>
-          <span>Career</span>
-          <span class="green--text">Goal</span>
-        </h2>
-        <br>
-        <p>
-          In the next 3-5 years, aim to grow into a <strong>Principal Engineer</strong> role -
-          driving system architecture and reliability strategy (SLOs, observability,
-          incident response) across teams, while mentoring senior engineers and shaping
-          long-term technology direction.
-        </p>
-      </v-flex>
-      <v-flex xs12 sm12 md8 lg8 xl8 class="mx-2 pt-4">
-        <h2>
-          <span>Coding</span>
-          <span class="green--text">Skills</span>
-        </h2>
-        <br>
-        <p><strong>Backend:</strong> Node.js (NestJS), PHP, Go, C# (.NET), Python, RESTful API design, OAuth2/SSO, JWT, RBAC, queues and background jobs, WebSocket. Willing to switch to another language (Java, Rust, etc.)</p>
-        <p><strong>Database:</strong> MySQL 8.0, PostgreSQL, Redis, schema design, indexing, query optimization</p>
-        <p><strong>SRE &amp; Observability:</strong> Prometheus, Grafana, Loki, Alertmanager, OpenTelemetry, Jaeger, Sentry, health checks and probes, autoscaling (HPA), PDBs, backup and restore, load testing (k6), runbooks</p>
-        <p><strong>Cloud &amp; Platform:</strong> AWS (EC2, S3, CloudFront, RDS, Lambda, API Gateway, SNS, SQS, CloudWatch), Kubernetes, Docker, ArgoCD (GitOps), HashiCorp Vault, Jenkins, GitLab CI, GitHub Actions, Nginx, Linux</p>
-        <p><strong>Security:</strong> OWASP remediation (IDOR, XSS, SQL injection, rate limiting), SonarQube, Trivy, govulncheck, gitleaks, Kubernetes NetworkPolicy and securityContext</p>
-        <p><strong>Software Engineering:</strong> OOP, System Design, Clean Code, SOLID, Design Patterns, Microservices, Message Queues, Event-driven design</p>
-        <p><strong>Frontend:</strong> Vue 3, React, TypeScript, Pinia, Vuetify</p>
-        <p><strong>Tools:</strong> Jira, Confluence, Slack, Backlog, Sentry, ChatGPT, Cursor, Claude</p>
-      </v-flex>
-      <div class="mt-4 pt-2">
-        <v-btn
-          href="/le-xuan-tuan-anh-cv.pdf"
-          target="_blank"
-          color="green"
-          dark
-          large
-        >
-          Download Resume
-          <v-icon right dark>fas fa-file-download</v-icon>
-        </v-btn>
-      </div>
-    </v-layout>
+    <v-flex xs12 sm12 md8 lg8 xl8 class="pt-4">
+      <h2>
+        <span>Career</span>
+        <span class="green--text">Goal</span>
+      </h2>
+      <br>
+      <p>
+        In the next 3-5 years, aim to grow into a <strong>Principal Engineer</strong> role -
+        driving system architecture and reliability strategy (SLOs, observability,
+        incident response) across teams, while mentoring senior engineers and shaping
+        long-term technology direction.
+      </p>
+    </v-flex>
+    <v-flex xs12 sm12 md8 lg8 xl8 class="pt-4">
+      <h2>
+        <span>Coding</span>
+        <span class="green--text">Skills</span>
+      </h2>
+      <br>
+      <p><strong>Backend:</strong> Node.js (NestJS), PHP, Go, C# (.NET), Python, RESTful API design, OAuth2/SSO, JWT, RBAC, queues and background jobs, WebSocket. Willing to switch to another language (Java, Rust, etc.)</p>
+      <p><strong>Database:</strong> MySQL 8.0, PostgreSQL, Redis, schema design, indexing, query optimization</p>
+      <p><strong>SRE &amp; Observability:</strong> Prometheus, Grafana, Loki, Alertmanager, OpenTelemetry, Jaeger, Sentry, health checks and probes, autoscaling (HPA), PDBs, backup and restore, load testing (k6), runbooks</p>
+      <p><strong>Cloud &amp; Platform:</strong> AWS (EC2, S3, CloudFront, RDS, Lambda, API Gateway, SNS, SQS, CloudWatch), Kubernetes, Docker, ArgoCD (GitOps), HashiCorp Vault, Jenkins, GitLab CI, GitHub Actions, Nginx, Linux</p>
+      <p><strong>Security:</strong> OWASP remediation (IDOR, XSS, SQL injection, rate limiting), SonarQube, Trivy, govulncheck, gitleaks, Kubernetes NetworkPolicy and securityContext</p>
+      <p><strong>Software Engineering:</strong> OOP, System Design, Clean Code, SOLID, Design Patterns, Microservices, Message Queues, Event-driven design</p>
+      <p><strong>Frontend:</strong> Vue 3, React, TypeScript, Pinia, Vuetify</p>
+      <p><strong>Tools:</strong> Jira, Confluence, Slack, Backlog, Sentry, ChatGPT, Cursor, Claude</p>
+    </v-flex>
+    <v-flex xs12 class="text-xs-center mt-4 pt-2">
+      <v-btn
+        href="/le-xuan-tuan-anh-cv.pdf"
+        download="Le-Xuan-Tuan-Anh-CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        color="green"
+        dark
+        large
+      >
+        Download Resume
+        <v-icon right dark>fas fa-file-download</v-icon>
+      </v-btn>
+    </v-flex>
   </v-layout>
+</v-container>
 </template>
 
 <script>
@@ -207,39 +209,12 @@ export default {
     ]
   },
   data () {
-    return {
-      value: 0,
-      buffer1: 0,
-      buffer2: 0,
-      buffer3: 0,
-      buffer4: 0,
-      buffer5: 0,
-      buffer6: 0,
-      bufferValue: 100,
-      interval: 0
-    }
-  },
-  mounted () {
-    this.startBuffer()
-  },
-
-  beforeDestroy () {
-    clearInterval(this.interval)
-  },
-
-  methods: {
-    startBuffer () {
-      this.interval = setInterval(() => {
-        this.buffer1 = 90
-        this.buffer2 = 85
-        this.buffer3 = 80
-        this.buffer4 = 80
-        this.buffer5 = 90
-        this.buffer6 = 70
-      }, 800)
-    }
+    return {}
   }
 }
 </script>
-<style >
+<style scoped>
+.safe-layout {
+  max-width: 1200px;
+}
 </style>
